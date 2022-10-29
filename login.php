@@ -12,7 +12,7 @@
           <div id="contact" class="box-shadow-full">
             <div class="title-box-2">
               <h5 class="title-left1 ">
-                Register
+                Login
               </h5>
             </div>
             <div>
@@ -20,12 +20,6 @@
 
 
                 <div class="row">
-
-                  <div class="col-md-12 mb-3">
-                    <div class="form-group">
-                      <input type="text" name="username" class="form-control" id="name" placeholder="Username"/>
-                    </div>
-                  </div>
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
@@ -39,19 +33,12 @@
                     </div>
                   </div>
 
-                  <div class="col-md-12 mb-3">
-                    <div class="form-group">
-                      <input type="text" class="form-control" name="confirm_password" id="subject" placeholder="Confirm Your Password"/>
-                    </div>
-                  </div>
-                 
-
                   <div class="col-md-12">
-                    <button type="submit" name="register-btn" class="btnn py-2">Register</button>
+                    <button type="submit" name="login-btn" class="btnn py-2">Login</button>
                   </div>
 
                   <div class="ml-3 my-2">
-                    <small style="font-size: 11px;">Already have an account? <a href="<?php echo BASE_URL . '/login.php'?>">Sing In</a></small>
+                    <small style="font-size: 11px;">Do not have an account? <a href="<?php echo BASE_URL . '/register.php'?>">Sing Up</a></small>
                   </div>
 
                 </div>
