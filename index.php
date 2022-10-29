@@ -579,7 +579,7 @@
     <script src="contactform/contactform.js"></script>
 
     <!-- Template Main Javascript File -->
-    <script src="js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   
     <script>
       AOS.init({
