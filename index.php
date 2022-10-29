@@ -568,7 +568,7 @@
     <script src="assets/lib/popper/popper.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/lib/easing/easing.min.js"></script>
-    <script src="assets/lib/counterup/jquery.waypoints.min.js"></script>
+    <!-- <script src="assets/lib/counterup/jquery.waypoints.min.js"></script> -->
     <script src="assets/lib/counterup/jquery.counterup.js"></script>
     <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
@@ -576,7 +576,7 @@
     <script src="assets/lib/dist/aos.js"></script>
 
     <!-- Contact Form JavaScript File -->
-    <script src="contactform/contactform.js"></script>
+    <script src="assets/lib/contactform/contactform.js"></script>
 
     <!-- Template Main Javascript File -->
     <script src="assets/js/main.js"></script>
