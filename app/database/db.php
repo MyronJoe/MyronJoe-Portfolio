@@ -126,18 +126,18 @@ function delete($table, $id){
 
 
 
-$conditions = [
-    'admin' => 1,
-    'username' => 'Myron',
-    'email' => 'Myron@gmail.com',
-    'status' => 'web dev',
-    'about_me' => 'Myron is my name',
-    'mobile_num' => '08109989839',
-];
+// $conditions = [
+//     'admin' => 0,
+//     'username' => 'Myron joe',
+//     'email' => 'Myronjoe@gmail.com',
+//     'status' => 'web dev',
+//     'about_me' => 'Myron is my name',
+//     'mobile_num' => '08109989839',
+// ];
 
-$users = create('users', $conditions);
+// $users = delete('users', 2);
 
-dump($users)
+// dump($users)
 
 
 ?>
