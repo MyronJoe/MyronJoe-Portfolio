@@ -16,15 +16,15 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" rel="stylesheet">
   <!-- <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
 
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate/animate.min.css" rel="stylesheet">
-  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <link href="lib/dist/aos.css" rel="stylesheet">
+  <link href="assets/lib/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -563,17 +563,17 @@
   
     <!-- JavaScript Libraries -->
     <!-- JavaScript Libraries -->
-    <script src="lib/jquery/jquery.min.js"></script>
-    <script src="lib/jquery/jquery-migrate.min.js"></script>
-    <script src="lib/popper/popper.min.js"></script>
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/counterup/jquery.waypoints.min.js"></script>
-    <script src="lib/counterup/jquery.counterup.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/dist/aos.js"></script>
+    <script src="assets/lib/jquery/jquery.min.js"></script>
+    <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="assets/lib/popper/popper.min.js"></script>
+    <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="assets/lib/counterup/jquery.counterup.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="assets/lib/typed/typed.min.js"></script>
+    <script src="assets/lib/dist/aos.js"></script>
 
     <!-- Contact Form JavaScript File -->
     <script src="contactform/contactform.js"></script>
