@@ -8,8 +8,8 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
   <!-- Favicons -->
-  <link href="img/Mj-fav-icon.png" rel="icon">
-  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+  <link href="assets/images/Mj-fav-icon.png" rel="icon">
+  <!-- <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Bootstrap CSS File -->
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -70,7 +70,7 @@
   <!--/ Nav End /-->
 
     <!--/ Intro Skew Star /-->
-    <div id="home" class="intro route bg-image" style="background-image: url(img/blog-4.jpg)">
+    <div id="home" class="intro route bg-image" style="background-image: url(assets/images/blog-4.jpg)">
       <div class="overlay-itro"></div>
       <div class="intro-content display-table">
         <div class="table-cell">
@@ -91,7 +91,7 @@
         <div class="profile">
           <div class="about-profile">
             <div class="about-img" data-aos="zoom-in">
-              <img src="img/testimonial-2.jpg" class=" rounded" alt="">
+              <img src="assets/images/testimonial-2.jpg" class=" rounded" alt="">
             </div>
             <div class="about-info">
               <p class="about-p"><span class="title-s">Name: </span> <span>Myron Joe</span></p>
@@ -223,9 +223,9 @@
         <div class="row">
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="img/work-1.jpg" data-lightbox="gallery-mf">
+              <a href="assets/images/work-1.jpg" data-lightbox="gallery-mf">
                 <div class="work-img">
-                  <img src="img/work-1.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/work-1.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
@@ -247,9 +247,9 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="img/work-2.jpg" data-lightbox="gallery-mf">
+              <a href="assets/images/work-2.jpg" data-lightbox="gallery-mf">
                 <div class="work-img">
-                  <img src="img/work-2.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/work-2.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
@@ -271,9 +271,9 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="img/work-3.jpg" data-lightbox="gallery-mf">
+              <a href="assets/images/work-3.jpg" data-lightbox="gallery-mf">
                 <div class="work-img">
-                  <img src="img/work-3.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/work-3.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
@@ -295,9 +295,9 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="img/work-4.jpg" data-lightbox="gallery-mf">
+              <a href="assets/images/work-4.jpg" data-lightbox="gallery-mf">
                 <div class="work-img">
-                  <img src="img/work-4.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/work-4.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
@@ -319,9 +319,9 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="img/work-5.jpg" data-lightbox="gallery-mf">
+              <a href="assets/images/work-5.jpg" data-lightbox="gallery-mf">
                 <div class="work-img">
-                  <img src="img/work-5.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/work-5.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
@@ -343,9 +343,9 @@
           </div>
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="img/work-6.jpg" data-lightbox="gallery-mf">
+              <a href="assets/images/work-6.jpg" data-lightbox="gallery-mf">
                 <div class="work-img">
-                  <img src="img/work-6.jpg" alt="" class="img-fluid">
+                  <img src="assets/images/work-6.jpg" alt="" class="img-fluid">
                 </div>
                 <div class="work-content">
                   <div class="row">
@@ -388,7 +388,7 @@
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="img/post-1.jpg" alt="" class="img-fluid"></a>
+                <a href="blog-single.html"><img src="assets/images/post-1.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -406,7 +406,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <img src="assets/images/testimonial-2.jpg" alt="" class="avatar rounded-circle">
                     <span class="author">Myron Joe</span>
                   </a>
                 </div>
@@ -416,7 +416,7 @@
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="img/post-2.jpg" alt="" class="img-fluid"></a>
+                <a href="blog-single.html"><img src="assets/images/post-2.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -434,7 +434,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <img src="assets/images/testimonial-2.jpg" alt="" class="avatar rounded-circle">
                     <span class="author">Myron Joe</span>
                   </a>
                 </div>
@@ -444,7 +444,7 @@
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img src="img/post-3.jpg" alt="" class="img-fluid"></a>
+                <a href="blog-single.html"><img src="assets/images/post-3.jpg" alt="" class="img-fluid"></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -462,7 +462,7 @@
               <div class="card-footer">
                 <div class="post-author">
                   <a href="#">
-                    <img src="img/testimonial-2.jpg" alt="" class="avatar rounded-circle">
+                    <img src="assets/images/testimonial-2.jpg" alt="" class="avatar rounded-circle">
                     <span class="author">Myron Joe</span>
                   </a>
                 </div>
@@ -477,7 +477,7 @@
   
     <!--/ Section Contact-Footer Star /-->
     <section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-5"
-      style="background-image: url(img/blog-4.jpg)">
+      style="background-image: url(assets/images/blog-4.jpg)">
       <div class="overlay-mf"></div>
       <div class="container">
         <div class="contact-mf" data-aos="zoom-in">
@@ -561,7 +561,7 @@
   <a class="back-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
     <div id="preloader"></div>
   
-    <!-- JavaScript Libraries -->
+   
     <!-- JavaScript Libraries -->
     <script src="assets/lib/jquery/jquery.min.js"></script>
     <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
