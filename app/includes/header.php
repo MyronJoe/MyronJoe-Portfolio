@@ -33,7 +33,7 @@
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#">KamTech</a>
+      <a class="navbar-brand js-scroll" href="<?php echo BASE_URL . '/index.php' ?>">KamTech</a>
       <button aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed"
         data-target="#navbarDefault" data-toggle="collapse" type="button">
         <span></span>
@@ -43,25 +43,25 @@
       <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll active" href="#">Home</a>
+            <a class="nav-link js-scroll active" href="<?php echo BASE_URL . '/index.php' ?>">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="/#about">About</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#about'?>">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="/#service">Services</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#service'?>">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="/#work">Projects</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#work'?>">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="/#blog">Blog</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#blog'?>">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="/#contact">Contact</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#contact'?>">Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="#">Login</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/register.php'?>">Register</a>
           </li>
         </ul>
       </div>
