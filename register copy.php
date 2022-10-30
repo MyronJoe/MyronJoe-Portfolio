@@ -20,22 +20,38 @@
               <form action="register.php" method="POST" class="contactForm">
 
               <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
-
+              
                 <div class="row">
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" name="username" value="<?php echo $username?>" class="form-control" id="name" placeholder="Username"/>
+                      <input type="text" name="username" class="form-control" id="name" placeholder="Username"/>
                     </div>
                   </div>
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="email" class="form-control" value="<?php echo $email?>" name="email" id="email" placeholder="Your Email"/>
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
                     </div>
                   </div>
+
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="status" id="subject" placeholder="What is your status"/>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="tel" class="form-control" name="mobile_num" id="subject" placeholder="Enter Mobile Number"/>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control" placeholder="About Me" id="description" value=""  name="about_me"></textarea>
+                  </div>
               
-                  <!-- <div class="col-md-12 mb-3">
+                  <div class="col-md-12 mb-3">
                     <label for="image">Profile-Image</label>
                     <input type="file" class="form-control-file"  id="profile_image" name="profile_image">
                   </div>
@@ -43,23 +59,23 @@
                   <div class="col-md-12 mb-3">
                     <label for="image">Cv-Image</label>
                     <input type="file" class="form-control-file"  id="cv_image" name="cv_image">
-                  </div> -->
+                  </div>
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" class="form-control" value="<?php echo $password?>" name="password" id="subject" placeholder="Enter Password"/>
+                      <input type="text" class="form-control" name="password" id="subject" placeholder="Enter Password"/>
                     </div>
                   </div>
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" class="form-control" value="<?php echo $confirm_password?>" name="confirm_password" id="subject" placeholder="Confirm Your Password"/>
+                      <input type="text" class="form-control" name="confirm_password" id="subject" placeholder="Confirm Your Password"/>
                     </div>
                   </div>
                  
 
                   <div class="col-md-12">
-                    <button type="submit" name="register-btn"  class="btnn py-2">Register</button>
+                    <button type="submit" name="register-btn" class="btnn py-2">Register</button>
                   </div>
 
                   <div class="ml-3 my-2">

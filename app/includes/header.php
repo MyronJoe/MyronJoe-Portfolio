@@ -51,6 +51,13 @@
       padding: 8px 10px;
       border-color: #491217;
     }
+    .form-error {
+      background-color: #ffb9d1;
+      padding: 8px 10px;
+      border: 2px solid #491217;
+      ;
+      margin-bottom: 1em;
+    }
   </style>
 
 </head>
