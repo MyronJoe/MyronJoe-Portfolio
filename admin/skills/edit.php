@@ -14,9 +14,10 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
         <div class="rside">
             <div class="float-right">
                 <a class="btn btn-primary" href="index.php">Manage Skills</a>
+                <a class="btn btn-primary" href="create.php">Add Skills</a>
             </div>
             <div class="adduser-sec">
-                <h2>Add Skill</h2>
+                <h2>Update Skill</h2>
             </div>
 
             <form action="create.php" method="POST" class="pb-3">
@@ -42,7 +43,7 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
                   </div>
 
                   <div class="col-md-12">
-                    <button type="submit" name="create-skill" class="btn btn-primary py-2">Add Skill</button>
+                    <button type="submit" name="update-skill" class="btn btn-primary py-2">Update Skill</button>
                   </div>
 
                 </div>

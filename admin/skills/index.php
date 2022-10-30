@@ -34,10 +34,9 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
                         <td>Html</td>
                         <td>80%</td>
                         <td>
-                            <a href="" class="btn btn-sm btn-primary mr-1">Edit</a>
+                            <a href="edit.php" class="btn btn-sm btn-primary mr-1">Edit</a>
 
-                            <a href="" class="btn btn-sm btn-danger">Delete</a>
-                            
+                            <a href="" class="btn btn-sm btn-danger">Delete</a>   
                         </td>
                     </tr>
                 </tbody>
@@ -45,11 +44,6 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
 
         </div>
     </section>
-
-
-    <?php
-        include ROOT_PATH . "/modal.php"
-    ?>
 
 </body>
 
