@@ -48,8 +48,8 @@ if (isset($_POST['register-btn'])) {
         $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
         $_POST['admin'] = 0;
-        $_POST['status'] = 'User';
-        $_POST['mobile_num'] = '+12345678';
+        $_POST['status'] = 'User Status';
+        $_POST['mobile_num'] = '+123...78';
         $_POST['about_me'] = 'Update Bio';
 
         $user_id = create($table, $_POST);
@@ -95,6 +95,34 @@ if (isset($_GET['id'])) {
     $mobile_num = $user['mobile_num'];
     $about_me = $user['about_me'];
     $status = $user['status'];
+}
+
+if (isset($_POST['update-user'])) {
+    $errors = validateUpdate($_POST, $errors);
+
+    if (count($errors) === 0) {
+        $id = $_POST['id'];
+        unset($_POST['id'], $_POST['update-user'], $_POST['confirm_password']);
+        $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
+
+        $_POST['admin'] = isset($_POST['admin']) ? 1 : 0;
+        $count = update($table, $id, $_POST);
+        $_SESSION['message'] = "User updated successfully";
+        $_SESSION['type'] = "success";
+        header("location: " . BASE_URL . "/admin/users/index.php");
+        exit();
+
+    }else{
+        $id = $_POST['id'];
+        $username = $_POST['username'];
+        $email = $_POST['email'];
+        $mobile_num = $_POST['mobile_num'];
+        $about_me = $_POST['about_me'];
+        $status = $_POST['status'];
+        $password = $_POST["password"];
+        $confirm_password = $_POST["confirm_password"];
+        $admin = isset($_POST['admin']) ? 1 : 0;
+    }
 }
 
 ?>

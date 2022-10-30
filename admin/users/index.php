@@ -12,6 +12,9 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
         </div>
 
         <div class="rside">
+            <div class="float-right">
+                <a class="btn btn-primary" href="<?php echo BASE_URL . '/register.php'?>">Create User</a>
+            </div>
             <div class="adduser-sec">
                 <h2>Manage Users</h2>
             </div>

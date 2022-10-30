@@ -12,11 +12,17 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
         </div>
 
         <div class="rside">
+            <div class="float-right">
+                <a class="btn btn-primary" href="index.php">Manage Post</a>
+            </div>
             <div class="adduser-sec">
                 <h2>Edit Users</h2>
             </div>
 
-            <form action="register.php" method="POST" class="pb-3">
+            <form action="edit.php" method="POST" class="pb-3">
+            <div class="table">
+                <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
+            </div>
               
             <input type="hidden" value="<?php echo $id?>" name="id" class="form-control" id="id" />
 
@@ -63,13 +69,13 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" class="form-control" name="password" id="subject" placeholder="Enter Password"/>
+                      <input type="text" class="form-control" name="password" value="<?php echo $password?>" id="subject" placeholder="Enter Password"/>
                     </div>
                   </div>
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" class="form-control" name="confirm_password" id="subject" placeholder="Confirm Your Password"/>
+                      <input type="text" class="form-control" name="confirm_password" value="<?php echo $confirm_password?>" id="subject" placeholder="Confirm Your Password"/>
                     </div>
                   </div>
                  
