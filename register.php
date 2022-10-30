@@ -1,6 +1,7 @@
 <?php 
     include 'path.php';
-    include(ROOT_PATH . '/app/includes/header.php')
+    include(ROOT_PATH . '/app/includes/header.php');
+    include(ROOT_PATH . '/app/controllers/users.php');
 ?>
 
 <!--/ Section Contact-Footer Star /-->
@@ -16,7 +17,7 @@
               </h5>
             </div>
             <div>
-              <form action="" method="post" class="contactForm">
+              <form action="register.php" method="POST" class="contactForm">
 
 
                 <div class="row">
@@ -31,6 +32,32 @@
                     <div class="form-group">
                       <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
                     </div>
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="text" class="form-control" name="status" id="subject" placeholder="What is your status"/>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                      <input type="tel" class="form-control" name="mobile_num" id="subject" placeholder="Enter Mobile Number"/>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <textarea class="form-control" placeholder="About Me" id="description" value=""  name="about_me"></textarea>
+                  </div>
+              
+                  <div class="col-md-12 mb-3">
+                    <label for="image">Profile-Image</label>
+                    <input type="file" class="form-control-file"  id="profile_image" name="profile_image">
+                  </div>
+
+                  <div class="col-md-12 mb-3">
+                    <label for="image">Cv-Image</label>
+                    <input type="file" class="form-control-file"  id="cv_image" name="cv_image">
                   </div>
 
                   <div class="col-md-12 mb-3">

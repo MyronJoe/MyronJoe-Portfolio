@@ -1,3 +1,6 @@
+<?php
+  session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,6 +28,30 @@
   <!-- Main Stylesheet File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/lib/dist/aos.css" rel="stylesheet">
+
+  <style>
+    .err-msg{
+      width: 80%;
+      position: absolute;
+      z-index: 200;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 80px;
+    }
+    .success {
+      color: #155724;
+      background-color: #d4edda;
+      border-color: #c3e6cb;
+    }
+    
+    .danger {
+      color: #491217;
+      background-color: #ffb9d1;
+      padding: 8px 10px;
+      border-color: #491217;
+    }
+  </style>
 
 </head>
 
@@ -68,3 +95,17 @@
     </div>
   </nav>
   <!--/ Nav End /-->
+
+
+<div class="err-msg">
+  <?php if(isset($_SESSION["message"])): ?>
+      <div style="padding: 1em;" class="<?php echo $_SESSION["type"];?>">
+          <p><?php echo $_SESSION["message"];?></p>
+
+          <?php 
+              unset($_SESSION["message"]);
+              unset($_SESSION["type"]);
+          ?>
+      </div>     
+  <?php endif; ?>
+</div>

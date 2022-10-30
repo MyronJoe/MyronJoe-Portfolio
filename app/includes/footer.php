@@ -42,7 +42,7 @@
     <script src="assets/lib/dist/aos.js"></script>
 
     <!-- Contact Form JavaScript File -->
-    <script src="assets/lib/contactform/contactform.js"></script>
+    <!-- <script src="assets/lib/contactform/contactform.js"></script> -->
 
     <!-- Template Main Javascript File -->
     <script src="assets/js/main.js"></script>
