@@ -13,7 +13,7 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
 
         <div class="rside">
             <div class="float-right">
-                <a class="btn btn-primary" href="<?php echo BASE_URL . '/register.php'?>">Add Skill</a>
+                <a class="btn btn-primary" href="create.php">Add Skill</a>
             </div>
             <div class="adduser-sec">
                 <h2>Manage Users</h2>
