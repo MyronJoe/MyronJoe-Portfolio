@@ -1,7 +1,8 @@
 <?php 
     include 'path.php';
-    include(ROOT_PATH . '/app/includes/header.php');
-    include(ROOT_PATH . '/app/controllers/users.php');
+    require_once(ROOT_PATH . '/app/includes/session.php');
+    require_once(ROOT_PATH . '/app/controllers/users.php');
+    require_once(ROOT_PATH . '/app/includes/header.php');
 ?>
 
 <!--/ Section Contact-Footer Star /-->

@@ -19,20 +19,33 @@ function validateUser($user, $errors){
     }
     
     //checking if an email already exist
-    // $existingUser = selectOne('users', ['email' => $user["email"]]);
-    // if($existingUser){
+    $existingUser = selectOne('users', ['email' => $user["email"]]);
+    if($existingUser){
 
-    //     if (isset($user['update-user']) && $existingUser['id'] != $user['id']) {
-    //         array_push($errors, 'Email already exists');
-    //     }
+        // if (isset($user['update-user']) && $existingUser['id'] != $user['id']) {
+        //     array_push($errors, 'Email already exists');
+        // }
 
-    //     if (isset($user['register-btn']) || isset($user['create-admin']) ) {
-    //         array_push($errors, 'Email already exists');
-    //     }
+        if (isset($user['register-btn']) || isset($user['create-admin']) ) {
+            array_push($errors, 'Email already exists');
+        }
         
-    // }
+    }
 
     // dump($errors);
+
+    return $errors;
+}
+
+function validateLogin($user, $errors){
+
+    if (empty($user["email"])) {
+        array_push($errors, 'email is required');
+    }
+
+    if (empty($user["password"])) {
+        array_push($errors, 'password is required');
+    }
 
     return $errors;
 }

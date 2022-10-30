@@ -1,6 +1,9 @@
-<?php 
+<?php
+
     include 'path.php';
-    include(ROOT_PATH . '/app/includes/header.php')
+    require_once(ROOT_PATH . '/app/includes/session.php');
+    require_once(ROOT_PATH . '/app/controllers/users.php');
+    require_once(ROOT_PATH . '/app/includes/header.php');
 ?>
 
 <!--/ Section Contact-Footer Star /-->
@@ -16,20 +19,20 @@
               </h5>
             </div>
             <div>
-              <form action="" method="post" class="contactForm">
-
+              <form action="login.php" method="POST" class="contactForm">
+              <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
 
                 <div class="row">
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"/>
+                      <input type="email" class="form-control" name="email" value="<?php echo $email?>" id="email" placeholder="Your Email"/>
                     </div>
                   </div>
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" class="form-control" name="password" id="subject" placeholder="Enter Password"/>
+                      <input type="text" class="form-control" name="password" value="<?php echo $password?>" id="subject" placeholder="Enter Password"/>
                     </div>
                   </div>
 

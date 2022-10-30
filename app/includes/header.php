@@ -1,5 +1,5 @@
 <?php
-  session_start()
+  require_once(ROOT_PATH . '/app/includes/session.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -58,6 +58,22 @@
       ;
       margin-bottom: 1em;
     }
+    .sub-menu ul{
+      background-color: #fff;
+      position: absolute;
+      display: none;
+      list-style: none;
+      padding: 5px 10px 5px 10px;
+    }
+    .sub-menu ul li a{
+      font-weight: bold;
+    }
+    .register{
+      position: relative;
+    }
+    .register:hover .sub-menu ul{
+      display: block !important;
+    }
   </style>
 
 </head>
@@ -94,9 +110,31 @@
           <li class="nav-item">
             <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#contact'?>">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/register.php'?>">Register</a>
-          </li>
+
+          <?php if(isset($_SESSION['id'])): ?>
+
+            <li class="nav-item register">
+              <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/register.php'?>"><span class="fa fa-user"></span> <?php echo $_SESSION['username']; ?></a>
+              <div class="sub-menu">
+                <ul>
+
+                  <?php if($_SESSION['admin']): ?>
+                    <li><a href="#">Dashboard</a></li>
+                  <?php endif; ?>
+
+                    <li><a href="#">Logout</a></li>
+                </ul>
+              </div>
+            </li>
+
+          <?php else: ?>
+              <!-- if the user is not loggrd in, it displays the rgister link -->
+              <li class="nav-item register">
+                <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/register.php'?>">Register</a>
+              </li>
+
+          <?php endif; ?>
+
         </ul>
       </div>
     </div>
