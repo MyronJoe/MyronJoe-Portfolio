@@ -125,4 +125,14 @@ if (isset($_POST['update-user'])) {
     }
 }
 
+//delete user
+if (isset($_GET['del_id'])) {
+    $id = $_GET['del_id'];
+    $count = delete($table, $id);
+    $_SESSION['message'] = "User deleted successfully";
+    $_SESSION['type'] = "success";
+    header("location: " . BASE_URL . "/admin/users/index.php");
+    exit();
+}
+
 ?>

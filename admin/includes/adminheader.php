@@ -1,3 +1,6 @@
+<?php 
+session_start()
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +16,15 @@
         .sidebar1 ul a{
             height: 10% !important;
         }
-
+        .err-msg{
+            width: 80%;
+            position: absolute;
+            z-index: 200;
+            left: 0;
+            right: 0;
+            margin: auto;
+            top: 80px;
+        }
         .submenu ul {
             display: none;
             position: absolute;
@@ -67,3 +78,16 @@
             </ul>
         </div>
     </nav>
+
+<div class="err-msg">
+  <?php if(isset($_SESSION["message"])): ?>
+      <div style="padding: 1em;" class="<?php echo $_SESSION["type"];?>">
+          <p><?php echo $_SESSION["message"];?></p>
+
+          <?php 
+              unset($_SESSION["message"]);
+              unset($_SESSION["type"]);
+          ?>
+      </div>     
+  <?php endif; ?>
+</div>
