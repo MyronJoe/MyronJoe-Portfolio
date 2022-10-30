@@ -71,7 +71,7 @@ session_start()
 
                     <div class="submenu">
                         <ul style="top:30px; right:0px">
-                            <li><a href=""><span style="display: inline; margin-right:5px;" class="fa-solid fa-arrow-right-from-bracket"></span>Logout</a></li>
+                            <li><a href="<?php echo BASE_URL . '/logout.php' ?>"><span style="display: inline; margin-right:5px;" class="fa-solid fa-arrow-right-from-bracket"></span>Logout</a></li>
                         </ul>
                     </div>
                 </li>

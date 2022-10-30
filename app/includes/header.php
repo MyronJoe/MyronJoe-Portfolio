@@ -122,7 +122,7 @@
                     <li><a href="<?php echo BASE_URL . '/admin/dasdboard.php'?>">Dashboard</a></li>
                   <?php endif; ?>
 
-                    <li><a href="#">Logout</a></li>
+                    <li><a href="<?php echo BASE_URL . '/logout.php' ?>">Logout</a></li>
                 </ul>
               </div>
             </li>
