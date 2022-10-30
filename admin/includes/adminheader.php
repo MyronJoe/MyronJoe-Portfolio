@@ -40,8 +40,6 @@
 
         .handler:hover .submenu ul {
             display: block;
-            
-
         }
         
     </style>
