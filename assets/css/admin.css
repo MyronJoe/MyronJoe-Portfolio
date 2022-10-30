@@ -118,7 +118,7 @@ nav{
   padding: .5em 1em;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   
 }
