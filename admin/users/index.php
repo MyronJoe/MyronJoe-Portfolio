@@ -38,18 +38,42 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
                         <td><?php echo $user['status'] ?></td>
                         <td>
                             <a href="edit.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-primary mr-1">Edit</a>
-                            <a href="" class="btn btn-sm btn-danger">Delete</a>
+                            <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#exampleModalCenter">Delete</button>
+                            
                         </td>
                     </tr>
+
+                    <!-- Modal -->
+                        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">Are you sure you want to delete user <?php echo $user['username'] ?>..?</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <?php echo $user['email'] ?>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                                <button type="button" class="btn btn-danger">Yes</button>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
                     <?php endforeach; ?>
                 </tbody>
             </table>
 
-
-
-
         </div>
     </section>
+
+
+    <?php
+        include ROOT_PATH . "/modal.php"
+    ?>
 
 </body>
 
