@@ -8,6 +8,13 @@ $username = '';
 $email = '';
 $password = '';
 $confirm_password = '';
+$id = '';
+$admin = '';
+$mobile_num = '';
+$about_me = '';
+$status = '';
+
+$allUsers = selectAll($table);
 
 
 //function that logs the user in
@@ -72,6 +79,22 @@ if (isset($_POST['login-btn'])) {
     }
     $email = $_POST["email"];
     $password = $_POST["password"];
+}
+
+//Update user
+
+if (isset($_GET['id'])) {
+    $user = selectOne($table, ['id' => $_GET['id']]);
+
+    // dump($user);
+
+    $id = $user['id'];
+    $username = $user['username'];
+    $email = $user['email'];
+    $admin = $user['admin'];
+    $mobile_num = $user['mobile_num'];
+    $about_me = $user['about_me'];
+    $status = $user['status'];
 }
 
 ?>

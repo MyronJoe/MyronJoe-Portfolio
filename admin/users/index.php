@@ -2,6 +2,7 @@
 <?php
 require_once '../../path.php';
 require_once(ROOT_PATH . '/admin/includes/adminheader.php');
+require_once(ROOT_PATH . '/app/controllers/users.php');
 ?>
     <section style="display: flex;">
         <div class="lside">
@@ -21,19 +22,23 @@ require_once(ROOT_PATH . '/admin/includes/adminheader.php');
                         <th scope="col">S/N</th>
                         <th scope="col">Name</th>
                         <th scope="col">Email</th>
+                        <th scope="col">Status</th>
                         <th scope="col">Action</th>
                     </tr>
                 </thead>
-                <tbody>   
+                <tbody>
+                    <?php foreach ($allUsers as $key => $user): ?>
                     <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
+                        <th scope="row"><?php echo $key + 1 ?></th>
+                        <td><?php echo $user['username'] ?></td>
+                        <td><?php echo $user['email'] ?></td>
+                        <td><?php echo $user['status'] ?></td>
                         <td>
-                            <a href="edit.php" class="btn btn-sm btn-primary mr-1">Edit</a>
+                            <a href="edit.php?id=<?php echo $user['id'] ?>" class="btn btn-sm btn-primary mr-1">Edit</a>
                             <a href="" class="btn btn-sm btn-danger">Delete</a>
                         </td>
                     </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
 
