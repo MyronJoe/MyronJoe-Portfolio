@@ -17,9 +17,6 @@ include(ROOT_PATH . "/app/controllers/users.php");
 
             </div>
 
-
-
-
         </div>
     </section>
 
