@@ -108,7 +108,7 @@
             <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#blog'?>">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/#contact'?>">Contact</a>
+            <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/contact.php'?>">Contact</a>
           </li>
 
           <?php if(isset($_SESSION['id'])): ?>

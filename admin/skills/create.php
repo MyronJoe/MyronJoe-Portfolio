@@ -2,7 +2,7 @@
 <?php
 require_once '../../path.php';
 require_once(ROOT_PATH . '/admin/includes/adminheader.php');
-require_once(ROOT_PATH . '/app/controllers/users.php');
+require_once(ROOT_PATH . '/app/controllers/skill.php');
 ?>
     <section style="display: flex;">
         <div class="lside">
@@ -13,7 +13,7 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
 
         <div class="rside">
             <div class="float-right">
-                <a class="btn btn-primary" href="index.php">Manage Skills</a>
+                <a class="btn btn-primary" href="index.php">Add Skills</a>
             </div>
             <div class="adduser-sec">
                 <h2>Add Skill</h2>
@@ -23,8 +23,6 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
             <div class="table">
                 <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
             </div>
-              
-            <input type="hidden"  name="id" class="form-control" id="id" />
 
                 <div class="row table">
                 

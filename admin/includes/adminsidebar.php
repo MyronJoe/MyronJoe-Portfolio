@@ -11,6 +11,8 @@
         
         <li><a href="<?php echo BASE_URL . '/admin/users/index.php'; ?>"><i class="fas fa-calendar-week"></i>Manage Users</a></li>
         <li><a href=""><i class="fas fa-qrcode"></i>Manage Posts</a></li>
+        
         <li><a href="<?php echo BASE_URL . '/admin/skills/index.php'; ?>"><i class="fas fa-stream"></i>Manage Skills</a></li>
+        <li><a href="<?php echo BASE_URL . '/admin/messages/index.php'; ?>"><i class="fas fa-qrcode"></i>Messages</a></li>
     </ul>
 </div>
