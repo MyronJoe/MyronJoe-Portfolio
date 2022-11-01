@@ -35,16 +35,6 @@
                       <input type="email" class="form-control" value="<?php echo $email?>" name="email" id="email" placeholder="Your Email"/>
                     </div>
                   </div>
-              
-                  <!-- <div class="col-md-12 mb-3">
-                    <label for="image">Profile-Image</label>
-                    <input type="file" class="form-control-file"  id="profile_image" name="profile_image">
-                  </div>
-
-                  <div class="col-md-12 mb-3">
-                    <label for="image">Cv-Image</label>
-                    <input type="file" class="form-control-file"  id="cv_image" name="cv_image">
-                  </div> -->
 
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
