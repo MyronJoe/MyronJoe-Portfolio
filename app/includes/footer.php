@@ -6,7 +6,6 @@
           <div class="socials">
             <ul>
               <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-              <!-- <li><a href=""><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li> -->
               <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
               <li><a href=""><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
               <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
