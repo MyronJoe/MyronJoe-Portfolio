@@ -41,8 +41,6 @@
     <script src="assets/lib/typed/typed.min.js"></script>
     <script src="assets/lib/dist/aos.js"></script>
 
-    <!-- <script src="assets/lib/contactform/contactform.js"></script> -->
-
     <!-- Template Main Javascript File -->
     <script src="assets/js/main.js"></script>
   
