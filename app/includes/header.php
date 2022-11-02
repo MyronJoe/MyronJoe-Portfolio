@@ -17,7 +17,7 @@
   <!-- Bootstrap CSS File -->
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" rel="stylesheet">
-  <!-- <link href="../static/bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+
 
   <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
