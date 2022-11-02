@@ -19,11 +19,8 @@
             </div>
             <div>
               <form action="register.php" method="POST" class="contactForm">
-
               <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
-
                 <div class="row">
-
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
                       <input type="text" name="username" value="<?php echo $username?>" class="form-control" id="name" placeholder="Username"/>
