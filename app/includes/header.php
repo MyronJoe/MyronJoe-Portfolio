@@ -12,7 +12,6 @@
   <meta content="" name="description">
   <!-- Favicons -->
   <link href="assets/images/Mj-fav-icon.png" rel="icon">
-  <!-- <link href="assets/images/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Bootstrap CSS File -->
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
