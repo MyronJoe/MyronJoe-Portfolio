@@ -4,8 +4,6 @@ require_once(ROOT_PATH . '/app/controllers/message.php');
 include(ROOT_PATH . '/app/includes/header.php');
 
 ?>
-
-<!--/ Section Contact-Footer Star /-->
 <section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-5" style="background-image: url(assets/images/blog-4.jpg)">
     <div class="overlay-mf"></div>
     <div class="container">
@@ -60,7 +58,6 @@ include(ROOT_PATH . '/app/includes/header.php');
         </div>
     </div>
 </section>
-<!--/ Section Blog End /-->
 <?php 
     include ROOT_PATH . '/app/includes/footer.php'
 ?>
