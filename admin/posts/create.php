@@ -2,6 +2,7 @@
 <?php
 require_once '../../path.php';
 require_once(ROOT_PATH . '/admin/includes/adminheader.php');
+require_once(ROOT_PATH . '/app/controllers/post.php');
 ?>
 <section style="display: flex;">
     <div class="lside">
@@ -30,7 +31,7 @@ require_once(ROOT_PATH . '/admin/includes/adminheader.php');
                 </div>
 
                 <div class="col-md-12 mb-3">
-                    <textarea class="form-control" placeholder="Content" id="description" value="" value="" name="about_me"></textarea>
+                    <textarea class="form-control" placeholder="Content" id="description" value="" value="" name="content"></textarea>
                 </div>
 
                 <div class="col-md-12 mb-3">
@@ -59,12 +60,12 @@ require_once(ROOT_PATH . '/admin/includes/adminheader.php');
                 </div>
 
                 <div class="form-group form-check col-md-12 mb-3 ml-3">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck2" name="published">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog">
                     <label class="form-check-label" for="exampleCheck2">Blog</label>
                 </div>
 
                 <div class="col-md-12">
-                    <button type="submit" name="create-skill" class="btn btn-primary py-2">Add Post</button>
+                    <button type="submit" name="create-post" class="btn btn-primary py-2">Add Post</button>
                 </div>
 
             </div>
