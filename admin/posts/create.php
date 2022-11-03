@@ -21,17 +21,18 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
 
         <form action="create.php" method="POST" class="pb-3">
             <div class="table">
+                <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
             </div>
             <div class="row table">
 
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        <input type="text" name="title" class="form-control" placeholder="Title" />
+                        <input type="text" name="title" value="<?php echo $title ?>" class="form-control" placeholder="Title" />
                     </div>
                 </div>
 
                 <div class="col-md-12 mb-3">
-                    <textarea class="form-control" placeholder="Content" id="description" value="" value="" name="content"></textarea>
+                    <textarea class="form-control" placeholder="Content"  id="description" value="" value="" name="content"><?php echo $content ?></textarea>
                 </div>
 
                 <div class="col-md-12 mb-3">
@@ -41,7 +42,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
 
                 <div class="col-md-12 mb-3">
                     <select name="category" id="category" class="form-control">
-                        <option value=""></option>
+                        <option value=""><?php echo $category ?></option>
                         <option value="Web Design">Web Design</option>
                         <option value="Graphics Design">Graphics Design</option>
                         <option value="Web Development">Web Development</option>
@@ -50,14 +51,21 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
 
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        <input type="text" name="link" class="form-control" placeholder="Link" />
+                        <input type="text" name="link" value="<?php echo $link ?>"  class="form-control" placeholder="Link" />
                     </div>
                 </div>
 
-                <div class="form-group form-check col-md-12 mb-3 ml-3">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published">
-                    <label class="form-check-label" for="exampleCheck1">Publish</label>
-                </div>
+                <?php if(isset($published) && $published == 1): ?>
+                    <div class="form-group form-check col-md-12 mb-3 ml-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published" checked>
+                        <label class="form-check-label" for="exampleCheck1">Publish</label>
+                    </div>
+                <?php else: ?>
+                    <div class="form-group form-check col-md-12 mb-3 ml-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published">
+                        <label class="form-check-label" for="exampleCheck1">Publish</label>
+                    </div>
+                <?php endif; ?>
 
                 <div class="form-group form-check col-md-12 mb-3 ml-3">
                     <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog">

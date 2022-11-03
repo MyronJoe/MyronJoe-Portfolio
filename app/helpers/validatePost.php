@@ -1,5 +1,5 @@
 <?php
-function validateUser($post, $errors){
+function validatePost($post, $errors){
     
 
     if (empty($post["title"])) {
@@ -14,7 +14,7 @@ function validateUser($post, $errors){
         array_push($errors, 'category is required');
     }
 
-    if ($post["link"]) {
+    if (empty($post["link"])) {
         array_push($errors, 'link is required');
     }
     
