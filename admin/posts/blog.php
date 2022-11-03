@@ -40,10 +40,17 @@ require_once(ROOT_PATH . '/admin/includes/adminheader.php');
 
                 <div class="col-md-12 mb-3">
                     <select name="category" id="category" class="form-control">
+                        <option value=""></option>
                         <option value="Web Design">Web Design</option>
                         <option value="Graphics Design">Graphics Design</option>
                         <option value="Web Development">Web Development</option>
                     </select>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <div class="form-group">
+                        <input type="text" name="link" class="form-control" placeholder="Link" />
+                    </div>
                 </div>
 
                 <div class="form-group form-check col-md-12 mb-3 ml-3">
@@ -57,7 +64,7 @@ require_once(ROOT_PATH . '/admin/includes/adminheader.php');
                 </div>
 
                 <div class="col-md-12">
-                    <button type="submit" name="create-skill" class="btn btn-primary py-2">Add Skill</button>
+                    <button type="submit" name="create-skill" class="btn btn-primary py-2">Add Post</button>
                 </div>
 
             </div>
