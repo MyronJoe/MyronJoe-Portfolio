@@ -42,7 +42,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
 
                 <div class="col-md-12 mb-3">
                     <select name="category" id="category" class="form-control">
-                        <option value=""><?php echo $category ?></option>
+                        <option value="<?php echo $category ?>"><?php echo $category ?></option>
                         <option value="Web Design">Web Design</option>
                         <option value="Graphics Design">Graphics Design</option>
                         <option value="Web Development">Web Development</option>
@@ -67,10 +67,18 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
                     </div>
                 <?php endif; ?>
 
-                <div class="form-group form-check col-md-12 mb-3 ml-3">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog">
-                    <label class="form-check-label" for="exampleCheck2">Blog</label>
-                </div>
+                
+                <?php if(isset($blog) && $blog == 1): ?>
+                    <div class="form-group form-check col-md-12 mb-3 ml-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog" checked>
+                        <label class="form-check-label" for="exampleCheck2">Blog</label>
+                    </div>
+                <?php else: ?>
+                    <div class="form-group form-check col-md-12 mb-3 ml-3">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog">
+                        <label class="form-check-label" for="exampleCheck2">Blog</label>
+                    </div>
+                <?php endif; ?>
 
                 <div class="col-md-12">
                     <button type="submit" name="create-post" class="btn btn-primary py-2">Add Post</button>

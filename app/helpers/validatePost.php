@@ -18,19 +18,19 @@ function validatePost($post, $errors){
         array_push($errors, 'link is required');
     }
     
-    //checking if an email already exist
-    // $existingUser = selectOne('users', ['email' => $post["email"]]);
-    // if($existingUser){
+    //checking if a Title already exist
+    $existinPost = selectOne('posts', ['title' => $post["title"]]);
+    if($existinPost){
 
-    //     if (isset($post['update-user']) && $existingUser['id'] != $post['id']) {
-    //         array_push($errors, 'Email already exists');
-    //     }
+        if (isset($post['update-post']) && $existinPost['id'] != $post['id']) {
+            array_push($errors, 'Title already exists');
+        }
 
-    //     if (isset($post['register-btn']) || isset($post['create-admin']) ) {
-    //         array_push($errors, 'Email already exists');
-    //     }
+        if (isset($post['create-post'])) {
+            array_push($errors, 'Title already exists');
+        }
         
-    // }
+    }
 
     // dump($errors);
 
