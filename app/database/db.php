@@ -28,6 +28,7 @@ function selectAll($table, $conditions = []){
     $sql = "SELECT * FROM $table";
 
     if (empty($conditions)) {
+        $sql = "SELECT * FROM $table ORDER BY created_at DESC";
         $stmt = $conn->prepare($sql);
         $stmt->execute();
         $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
@@ -42,7 +43,12 @@ function selectAll($table, $conditions = []){
             }
             $i++;
         }
+        
  
+        $sql = $sql . "ORDER BY created_at DESC";
+
+        // dump($sql);
+
         $stmt = executeQuerry($sql, $conditions);
         $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         return $records;

@@ -30,7 +30,10 @@ if (isset($_POST['create-post'])) {
         $_POST['user_id'] = 1;
 
         $post_id = create($table, $_POST);
-
+        $_SESSION['message'] = 'Post created successfully';
+        $_SESSION["type"] = "success";
+        header('location: '. BASE_URL . '/admin/posts/index.php');
+        exit();
 
     }else{
         $title = $_POST['title'];
@@ -50,7 +53,7 @@ if (isset($_GET['id'])) {
 
     $post = selectOne($table, ['id' => $id]);
     // dump($post);
-    $id = $post['title'];
+    $id = $post['id'];
     $title = $post['title'];
     $content = $post['content'];
     $category = $post['category'];
@@ -66,7 +69,15 @@ if (isset($_POST['update-post'])) {
         $id = $_POST['id'];
         unset($_POST['update-post'], $_POST['id']);
 
-        dump($_POST);
+        $_POST['published'] = isset($_POST['published']) ? 1 : 0;
+        $_POST['blog'] = isset($_POST['blog']) ? 1 : 0;
+
+        $post_id = update($table, $id, $_POST);
+        $_SESSION['message'] = 'Post updated successfully';
+        $_SESSION["type"] = "success";
+        header('location: '. BASE_URL . '/admin/posts/index.php');
+        exit();
+
 
     }else{
         $title = $_POST['title'];
@@ -79,6 +90,16 @@ if (isset($_POST['update-post'])) {
     
 }
 
+
+//Delete Post
+if (isset($_GET['del_id'])) {
+    $id = $_GET['del_id'];
+    $count = delete($table, $id);
+    $_SESSION['message'] = 'Post deleted successfully';
+    $_SESSION["type"] = "success";
+    header('location: '. BASE_URL . '/admin/posts/index.php');
+    exit();
+}
 
 
 

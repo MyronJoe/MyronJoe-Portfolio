@@ -38,7 +38,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
                             <td><?php echo $post['category'] ?></td>
 
                             <td>
-                                <?php if($post['blog']): ?>
+                                <?php if($post['blog'] && $post['blog'] == 1): ?>
                                     <p>Blog</p>
                                 <?php else: ?>
                                     <p>Project</p>
@@ -48,7 +48,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
                             <td>
                                 <a href="edit.php?id=<?php echo $post['id'] ?>" class="btn btn-sm btn-primary mr-1">Edit</a>
 
-                                <a href="" class="btn btn-sm btn-danger">Delete</a>   
+                                <a href="index.php?del_id=<?php echo $post['id'] ?>" class="btn btn-sm btn-danger">Delete</a>   
                             </td>
 
                             <td>
