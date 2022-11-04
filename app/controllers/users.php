@@ -99,7 +99,40 @@ if (isset($_GET['id'])) {
 
 if (isset($_POST['update-user'])) {
 
-    // dump($_FILES['image']);
+    // dump($_FILES);
+    // cv_image
+    if (!empty($_FILES['cv_image']['name'])) {
+        
+        $imageName = time() . "_" . $_FILES['cv_image']['name'];
+        $destination = ROOT_PATH . "/assets/images" . $imageName;
+
+        $result = move_uploaded_file($_FILES['cv_image']['tmp_name'], $destination);
+
+        if ($result) {
+            $_POST['cv_image'] = $imageName;
+        }else{
+            array_push($errors, 'CV Image failed to upload');
+        }
+    }else{
+        array_push($errors, 'CV Image is requierd');
+    }
+    
+    //profile_image
+    if (!empty($_FILES['profile_image']['name'])) {
+        
+        $imageName = time() . "_" . $_FILES['profile_image']['name'];
+        $destination = ROOT_PATH . "/assets/images" . $imageName;
+
+        $result = move_uploaded_file($_FILES['profile_image']['tmp_name'], $destination);
+
+        if ($result) {
+            $_POST['profile_image'] = $imageName;
+        }else{
+            array_push($errors, 'Profile Image failed to upload');
+        }
+    }else{
+        array_push($errors, 'Profile Image is requierd');
+    }
 
     $errors = validateUpdate($_POST, $errors);
 
@@ -110,7 +143,7 @@ if (isset($_POST['update-user'])) {
 
         $_POST['admin'] = isset($_POST['admin']) ? 1 : 0;
         $count = update($table, $id, $_POST);
-        $_SESSION['message'] = "User updated successfully";
+        $_SESSION['message'] = "User ".$_POST['username']." updated successfully" ;
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/admin/users/index.php");
         exit();

@@ -54,11 +54,6 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
         </div>
     </section>
 
-
-    <?php
-        include ROOT_PATH . "/modal.php"
-    ?>
-
 </body>
 
 </html>

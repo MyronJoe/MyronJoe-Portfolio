@@ -19,7 +19,8 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
                 <h2>Edit Users</h2>
             </div>
 
-            <form action="edit.php" method="POST" class="pb-3">
+            <form action="edit.php" method="POST" class="pb-3" enctype="multipart/form-data">
+              
             <div class="table">
                 <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
             </div>
