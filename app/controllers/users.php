@@ -26,17 +26,13 @@ function loginUser($user){
     $_SESSION['message'] = "You are now logged in";
     $_SESSION['type'] = "success";
     
-    if ($_SESSION['id']) {
-        header("location: " . BASE_URL . "/index.php");
-        exit();
-    }
 
-    // if ($_SESSION['admin']) {
-    //     header("location: " . BASE_URL . "/admin/dashboard.php");
-    // }else{
-    //     header("location: " . BASE_URL . "/index.php");
-    // }
-    // exit();
+    if ($_SESSION['admin']) {
+        header("location: " . BASE_URL . "/admin/dasdboard.php");
+    }else{
+        header("location: " . BASE_URL . "/index.php");
+    }
+    exit();
 }
 
 

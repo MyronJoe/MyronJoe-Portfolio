@@ -13,7 +13,7 @@ require_once(ROOT_PATH . '/app/controllers/skill.php');
 
         <div class="rside">
             <div class="float-right">
-                <a class="btn btn-primary" href="index.php">Add Skills</a>
+                <a class="btn btn-primary" href="index.php">Manage Skills</a>
             </div>
             <div class="adduser-sec">
                 <h2>Add Skill</h2>
