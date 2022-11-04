@@ -43,6 +43,24 @@ if (isset($_POST['create-post'])) {
     
 }
 
+//update podt
+
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+
+    $post = selectOne($table, ['id' => $id]);
+    // dump($post);
+
+    $id = $post['title'];
+    $title = $post['title'];
+    $content = $post['content'];
+    $category = $post['category'];
+    $link = $post['link'];
+    $blog = $post['blog'];
+    $published = $post['published'];
+}
+
+
 
 
 ?>
