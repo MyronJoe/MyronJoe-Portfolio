@@ -19,7 +19,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
             <h2>Add Blog Post</h2>
         </div>
 
-        <form action="create.php" method="POST" class="pb-3">
+        <form action="create.php" method="POST" class="pb-3" enctype="multipart/form-data">
             <div class="table">
                 <?php include(ROOT_PATH . "/app/helpers/formerrors.php") ?>
             </div>
@@ -37,7 +37,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
 
                 <div class="col-md-12 mb-3">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control-file" id="image" name="image">
+                    <input type="file" class="form-control-file"  id="image" name="image">
                 </div>
 
                 <div class="col-md-12 mb-3">

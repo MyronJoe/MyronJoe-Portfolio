@@ -19,11 +19,28 @@ $posts = selectAll($table);
 
 
 if (isset($_POST['create-post'])) {
+    
     $errors = validatePost($_POST, $errors);
+
+    if (!empty($_FILES['image']['name'])) {
+        
+        $imageName = time() . "_" . $_FILES['image']['name'];
+        $destination = ROOT_PATH . "/assets/images" . $imageName;
+
+        $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
+
+        if ($result) {
+            $_POST['image'] = $imageName;
+        }else{
+            array_push($errors, 'Image failed to upload');
+        }
+        // dump($imageName);
+    }else{
+        array_push($errors, 'Image is requierd');
+    }
 
     if (count($errors) === 0) {
         unset($_POST['create-post']);
-
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
         $_POST['blog'] = isset($_POST['blog']) ? 1 : 0;
         
@@ -64,6 +81,23 @@ if (isset($_GET['id'])) {
 
 if (isset($_POST['update-post'])) {
     $errors = validatePost($_POST, $errors);
+
+    if (!empty($_FILES['image']['name'])) {
+        
+        $imageName = time() . "_" . $_FILES['image']['name'];
+        $destination = ROOT_PATH . "/assets/images" . $imageName;
+
+        $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
+
+        if ($result) {
+            $_POST['image'] = $imageName;
+        }else{
+            array_push($errors, 'Image failed to upload');
+        }
+        // dump($imageName);
+    }else{
+        array_push($errors, 'Image is requierd');
+    }
 
     if (count($errors) == 0) {
         $id = $_POST['id'];

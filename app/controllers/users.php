@@ -98,6 +98,9 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update-user'])) {
+
+    // dump($_FILES['image']);
+
     $errors = validateUpdate($_POST, $errors);
 
     if (count($errors) === 0) {
