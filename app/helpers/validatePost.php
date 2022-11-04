@@ -22,6 +22,9 @@ function validatePost($post, $errors){
     $existinPost = selectOne('posts', ['title' => $post["title"]]);
     if($existinPost){
 
+        // if (isset($post['update-post']) && $existinPost['id'] != $post['id']) {
+        //     array_push($errors, 'Title already exists');
+        // }
         if (isset($post['update-post']) && $existinPost['id'] != $post['id']) {
             array_push($errors, 'Title already exists');
         }

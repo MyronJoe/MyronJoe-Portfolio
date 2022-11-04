@@ -50,7 +50,6 @@ if (isset($_GET['id'])) {
 
     $post = selectOne($table, ['id' => $id]);
     // dump($post);
-
     $id = $post['title'];
     $title = $post['title'];
     $content = $post['content'];
@@ -58,6 +57,26 @@ if (isset($_GET['id'])) {
     $link = $post['link'];
     $blog = $post['blog'];
     $published = $post['published'];
+}
+
+if (isset($_POST['update-post'])) {
+    $errors = validatePost($_POST, $errors);
+
+    if (count($errors) == 0) {
+        $id = $_POST['id'];
+        unset($_POST['update-post'], $_POST['id']);
+
+        dump($_POST);
+
+    }else{
+        $title = $_POST['title'];
+        $content = $_POST['content'];
+        $category = $_POST['category'];
+        $link = $_POST['link'];
+        $blog = isset($_POST['blog']) ? 1 : 0;;
+        $published = isset($_POST['published']) ? 1 : 0;
+    }
+    
 }
 
 
