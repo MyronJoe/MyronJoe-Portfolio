@@ -41,11 +41,10 @@ if (isset($_POST['create-post'])) {
 
     if (count($errors) === 0) {
         unset($_POST['create-post']);
+        $_POST['user_id'] =  $_SESSION['id'];
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
         $_POST['blog'] = isset($_POST['blog']) ? 1 : 0;
         
-        $_POST['user_id'] = 1;
-
         $post_id = create($table, $_POST);
         $_SESSION['message'] = 'Post created successfully';
         $_SESSION["type"] = "success";
