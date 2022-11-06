@@ -9,6 +9,8 @@
 
     $skills = selectAll('skills');
 
+    // $user = selectOne('users', ['ultimateAdmin' => 1])
+
     // dump($skills)
 ?>
 

@@ -13,6 +13,7 @@ $admin = '';
 $mobile_num = '';
 $about_me = '';
 $status = '';
+$ultimateAdmin = '';
 
 $allUsers = selectAll($table);
 
@@ -44,12 +45,13 @@ if (isset($_POST['register-btn'])) {
         $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
         $_POST['admin'] = 0;
+        $_POST['ultimateAdmin'] = 0;
         $_POST['status'] = 'User Status';
         $_POST['mobile_num'] = '+123...78';
         $_POST['about_me'] = 'Update Bio';
 
         $user_id = create($table, $_POST);
-        $_SESSION['message'] = "User created successfully";
+        $_SESSION['message'] = "User created successfully you can now login";
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/login.php");
         exit();
@@ -88,6 +90,7 @@ if (isset($_GET['id'])) {
     $username = $user['username'];
     $email = $user['email'];
     $admin = $user['admin'];
+    $ultimateAdmin = $user['ultimateAdmin'];
     $mobile_num = $user['mobile_num'];
     $about_me = $user['about_me'];
     $status = $user['status'];
@@ -138,6 +141,7 @@ if (isset($_POST['update-user'])) {
         $_POST["password"] = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
         $_POST['admin'] = isset($_POST['admin']) ? 1 : 0;
+        $_POST['ultimateAdmin'] = isset($_POST['ultimateAdmin']) ? 1 : 0;
         $count = update($table, $id, $_POST);
         $_SESSION['message'] = "User ".$_POST['username']." updated successfully" ;
         $_SESSION['type'] = "success";
@@ -154,6 +158,7 @@ if (isset($_POST['update-user'])) {
         $password = $_POST["password"];
         $confirm_password = $_POST["confirm_password"];
         $admin = isset($_POST['admin']) ? 1 : 0;
+        $ultimateAdmin = isset($_POST['ultimateAdmin']) ? 1 : 0;
     }
 }
 
