@@ -25,7 +25,7 @@ if (isset($_POST['create-post'])) {
     if (!empty($_FILES['image']['name'])) {
         
         $imageName = time() . "_" . $_FILES['image']['name'];
-        $destination = ROOT_PATH . "/assets/images" . $imageName;
+        $destination = ROOT_PATH . "/assets/images/" . $imageName;
 
         $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
 
@@ -84,7 +84,7 @@ if (isset($_POST['update-post'])) {
     if (!empty($_FILES['image']['name'])) {
         
         $imageName = time() . "_" . $_FILES['image']['name'];
-        $destination = ROOT_PATH . "/assets/images" . $imageName;
+        $destination = ROOT_PATH . "/assets/images/" . $imageName;
 
         $result = move_uploaded_file($_FILES['image']['tmp_name'], $destination);
 

@@ -1,6 +1,11 @@
 <?php 
     include 'path.php';
     include(ROOT_PATH . '/app/includes/header.php');
+    include ROOT_PATH . "/app/database/db.php";
+
+    $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
+
+    // dump($blogs)
 ?>
 
     <!--/ Intro Skew Star /-->
@@ -319,91 +324,39 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/images/post-1.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Travel</h6>
-                  </div>
+          <?php foreach($blogs as $key => $blog):?>
+
+            <?php
+              $author = selectOne('users', ['id' => $blog['user_id']]);
+              // dump($author['profile_image']);
+            ?>
+
+            <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
+              <div class="card card-blog">
+                <div class="card-img">
+                  <a href="blog-single.html"><img src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt="" class="img-fluid"></a>
                 </div>
-                <h3 class="card-title nobg"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/images/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Myron Joe</span>
-                  </a>
+                <div class="card-body">
+                  <div class="card-category-box">
+                    <div class="card-category">
+                      <h6 class="category"><?php echo $blog['category']?></h6>
+                    </div>
+                  </div>
+                  <h3 class="card-title nobg"><a href="blog-single.html"><?php echo $blog['title']?></a></h3>
+                  <p class="card-description"><?php echo substr($blog['content'], 0, 120).'...'?></p>
+                </div>
+                <div class="card-footer">
+                  <div class="post-author">
+                    <a href="#">
+                      <img src="<?php echo BASE_URL . '/assets/images/' . $author['profile_image'] ?>" alt="" class="avatar rounded-circle">
+                      <span class="author"><?php echo $author['username']?></span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/images/post-2.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title nobg"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/images/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Myron Joe</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="card card-blog">
-              <div class="card-img">
-                <a href="blog-single.html"><img src="assets/images/post-3.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">Web Design</h6>
-                  </div>
-                </div>
-                <h3 class="card-title nobg"><a href="blog-single.html">See more ideas about Travel</a></h3>
-                <p class="card-description">
-                  Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                  a pellentesque nec,
-                  egestas non nisi.
-                </p>
-              </div>
-              <div class="card-footer">
-                <div class="post-author">
-                  <a href="#">
-                    <img src="assets/images/testimonial-2.jpg" alt="" class="avatar rounded-circle">
-                    <span class="author">Myron Joe</span>
-                  </a>
-                </div>
-  
-              </div>
-            </div>
-          </div>
+          <?php endforeach; ?>
+
         </div>
       </div>
     </section>

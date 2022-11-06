@@ -100,7 +100,7 @@ if (isset($_POST['update-user'])) {
     if (!empty($_FILES['cv_image']['name'])) {
         
         $imageName = time() . "_" . $_FILES['cv_image']['name'];
-        $destination = ROOT_PATH . "/assets/images" . $imageName;
+        $destination = ROOT_PATH . "/assets/images/" . $imageName;
 
         $result = move_uploaded_file($_FILES['cv_image']['tmp_name'], $destination);
 
@@ -117,7 +117,7 @@ if (isset($_POST['update-user'])) {
     if (!empty($_FILES['profile_image']['name'])) {
         
         $imageName = time() . "_" . $_FILES['profile_image']['name'];
-        $destination = ROOT_PATH . "/assets/images" . $imageName;
+        $destination = ROOT_PATH . "/assets/images/" . $imageName;
 
         $result = move_uploaded_file($_FILES['profile_image']['tmp_name'], $destination);
 
