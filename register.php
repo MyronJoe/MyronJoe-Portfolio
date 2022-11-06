@@ -51,7 +51,7 @@
                   </div>
 
                   <div class="ml-3 my-2">
-                    <small style="font-size: 11px;">Already have an account? <a href="<?php echo BASE_URL . '/login.php'?>">Sing In</a></small>
+                    <small style="font-size: 11px;">Already have an account? <a href="<?php echo BASE_URL . '/login.php'?>">Sign In</a></small>
                   </div>
 
                 </div>
