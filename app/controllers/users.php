@@ -51,7 +51,7 @@ if (isset($_POST['register-btn'])) {
         $user_id = create($table, $_POST);
         $_SESSION['message'] = "User created successfully";
         $_SESSION['type'] = "success";
-        header("location: " . BASE_URL . "/index.php");
+        header("location: " . BASE_URL . "/login.php");
         exit();
     }else{
         $username = $_POST["username"];
