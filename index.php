@@ -7,7 +7,9 @@
 
     $projects = selectAll('posts', ['blog' => 0, 'published' => 1]);
 
-    // dump($projects)
+    $skills = selectAll('skills');
+
+    // dump($skills)
 ?>
 
     <!--/ Intro Skew Star /-->
@@ -49,15 +51,17 @@
           <div class="skill-mf">
             <p class="title-ss">Skill</p>
             <ul class="skils">
-              <li>HTML</li>
-              <li>CSS3</li>
+            <?php foreach($skills as $key => $skill):?>
+              <li><?php echo $skill['skill'] ?></li>
+            <?php endforeach;?>
+              <!-- <li>CSS3</li>
               <li>JAVASCRIPT</li>
               <li>React</li>
               <li>Python</li>
               <li>Django</li>
               <li>Flask</li>
               <li>Php</li>
-              <li>Firebase</li>
+              <li>Firebase</li> -->
             </ul>
           </div>
           <p class="pt-2"><a class="btn btn-primary px-4" href="#about" >Download
