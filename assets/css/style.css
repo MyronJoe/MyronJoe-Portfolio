@@ -821,9 +821,9 @@ body {
     transition: all 1s;
   }
   
-  .work-content {
-    padding: 2rem 3% 1rem 4%;
-  }
+  /* .work-content {
+    padding: 2rem 3% 0rem 4%;
+  } */
   
   .work-content .w-more {
     color: #4e4e4e;
@@ -2038,9 +2038,6 @@ body {
     transition: all 1s;
   }
   
-  .work-content {
-    padding: 2rem 3% 1rem 4%;
-  }
   
   .work-content .w-more {
     color: #4e4e4e;

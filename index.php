@@ -5,7 +5,9 @@
 
     $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
 
-    // dump($blogs)
+    $projects = selectAll('posts', ['blog' => 0, 'published' => 1]);
+
+    // dump($projects)
 ?>
 
     <!--/ Intro Skew Star /-->
@@ -160,21 +162,27 @@
           </div>
         </div>
         <div class="row">
+
+        <?php foreach($projects as $key => $project):?>
+
+          <?php if($key < 7):?>
+  
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
-              <a href="assets/images/work-1.jpg" data-lightbox="gallery-mf">
+              <a href="<?php echo BASE_URL . '/assets/images/' . $project['image'] ?>" data-lightbox="gallery-mf">
+              
                 <div class="work-img">
-                  <img src="assets/images/work-1.jpg" alt="" class="img-fluid">
+                  <img style="object-fit: cover;" height="250px" width="100%" src="<?php echo BASE_URL . '/assets/images/' . $project['image'] ?>" alt="">
                 </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title nobg">Lorem impsum dolor</h2>
+                <div class="work-content mx-3 pt-2">
+                  <div class="d-flex" style="justify-content: space-between; align-items:center;">
+                    <div class="">
+                      <h2 class="w-title nobg"><?php echo $project['title']?></h2>
                       <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
+                        <span class="w-date"><?php echo $project['category']?></span>
                       </div>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="">
                       <div class="w-like">
                         <span class="ion-ios-plus-outline"></span>
                       </div>
@@ -182,128 +190,12 @@
                   </div>
                 </div>
               </a>
+              <p class="ml-3 pb-2"><a href="">Preview</a></p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="work-box">
-              <a href="assets/images/work-2.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="assets/images/work-2.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title nobg">Loreda Cuno Nere</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="work-box">
-              <a href="assets/images/work-3.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="assets/images/work-3.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title nobg">Mavrito Lana Dere</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="work-box">
-              <a href="assets/images/work-4.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="assets/images/work-4.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title nobg">Bindo Laro Cado</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="work-box">
-              <a href="assets/images/work-5.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="assets/images/work-5.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title nobg">Studio Lena Mado</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2018</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-            <div class="work-box">
-              <a href="assets/images/work-6.jpg" data-lightbox="gallery-mf">
-                <div class="work-img">
-                  <img src="assets/images/work-6.jpg" alt="" class="img-fluid">
-                </div>
-                <div class="work-content">
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <h2 class="w-title nobg">Studio Big Bang</h2>
-                      <div class="w-more">
-                        <span class="w-ctegory">Web Design</span> / <span class="w-date">18 Sep. 2017</span>
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="w-like">
-                        <span class="ion-ios-plus-outline"></span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+
+          <?php endif;?>
+          <?php endforeach; ?>
   
         </div>
       </div>
@@ -326,35 +218,36 @@
         <div class="row">
           <?php foreach($blogs as $key => $blog):?>
 
-            <?php
-              $author = selectOne('users', ['id' => $blog['user_id']]);
-              // dump($author['profile_image']);
-            ?>
+            <?php if($key < 3):?>
+              <?php
+                $author = selectOne('users', ['id' => $blog['user_id']]);
+              ?>
 
-            <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
-              <div class="card card-blog">
-                <div class="card-img">
-                  <a href="blog-single.html"><img src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt="" class="img-fluid"></a>
-                </div>
-                <div class="card-body">
-                  <div class="card-category-box">
-                    <div class="card-category">
-                      <h6 class="category"><?php echo $blog['category']?></h6>
-                    </div>
+              <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
+                <div class="card card-blog">
+                  <div class="card-img">
+                    <a href="blog-single.html"><img src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt="" class="img-fluid"></a>
                   </div>
-                  <h3 class="card-title nobg"><a href="blog-single.html"><?php echo $blog['title']?></a></h3>
-                  <p class="card-description"><?php echo substr($blog['content'], 0, 120).'...'?></p>
-                </div>
-                <div class="card-footer">
-                  <div class="post-author">
-                    <a href="#">
-                      <img src="<?php echo BASE_URL . '/assets/images/' . $author['profile_image'] ?>" alt="" class="avatar rounded-circle">
-                      <span class="author"><?php echo $author['username']?></span>
-                    </a>
+                  <div class="card-body">
+                    <div class="card-category-box">
+                      <div class="card-category">
+                        <h6 class="category"><?php echo $blog['category']?></h6>
+                      </div>
+                    </div>
+                    <h3 class="card-title nobg"><a href="blog-single.html"><?php echo $blog['title']?></a></h3>
+                    <p class="card-description"><?php echo substr($blog['content'], 0, 120).'...'?></p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="post-author">
+                      <a href="#">
+                        <img src="<?php echo BASE_URL . '/assets/images/' . $author['profile_image'] ?>" alt="" class="avatar rounded-circle">
+                        <span class="author"><?php echo $author['username']?></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            <?php endif;?>
           <?php endforeach; ?>
 
         </div>

@@ -32,7 +32,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
                 </thead>
                 <tbody>
                     <?php foreach ($posts as $key => $post):?>
-                        <?php if($key < 5):?>
+                       
                             <tr>
                                 <th scope="row"><?php echo $key + 1 ?></th>
                                 <td><?php echo $post['title'] ?></td>
@@ -60,7 +60,7 @@ require_once(ROOT_PATH . '/app/controllers/post.php');
                                     <?php endif; ?>
                                 </td>
                             </tr>
-                        <?php endif;?>
+                        
                     <?php endforeach;?>
                 </tbody>
             </table>
