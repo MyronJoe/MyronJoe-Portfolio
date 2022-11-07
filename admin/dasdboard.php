@@ -2,6 +2,7 @@
 include '../path.php';
 require_once(ROOT_PATH . '/admin/includes/adminheader.php');
 include(ROOT_PATH . "/app/controllers/users.php");
+adminOnly();
 ?>
     <section style="display: flex;">
         <div class="lside">

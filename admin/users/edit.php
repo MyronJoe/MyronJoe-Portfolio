@@ -3,6 +3,7 @@
 require_once '../../path.php';
 require_once(ROOT_PATH . '/admin/includes/adminheader.php');
 require_once(ROOT_PATH . '/app/controllers/users.php');
+ultimateAdminOnly()
 ?>
     <section style="display: flex;">
         <div class="lside">

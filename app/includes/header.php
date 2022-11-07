@@ -113,7 +113,7 @@
           <?php if(isset($_SESSION['id'])): ?>
 
             <li class="nav-item register">
-              <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/register.php'?>"><span class="fa fa-user"></span> <?php echo $_SESSION['username']; ?></a>
+              <a class="nav-link js-scroll" href=""><span class="fa fa-user"></span> <?php echo $_SESSION['username']; ?></a>
               <div class="sub-menu">
                 <ul>
 
