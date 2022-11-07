@@ -29,7 +29,7 @@ function ultimateAdminOnly($redirect = '/index.php'){
 }
 
 
-function guestOnly($redirect = '/index.php'){
+function allreadyLogedIn($redirect = '/index.php'){
     if (!empty($_SESSION["id"])) {
         header('location: ' .BASE_URL . $redirect);
         exit();

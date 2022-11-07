@@ -4,6 +4,7 @@
     require_once(ROOT_PATH . '/app/includes/session.php');
     require_once(ROOT_PATH . '/app/controllers/users.php');
     require_once(ROOT_PATH . '/app/includes/header.php');
+    allreadyLogedIn();
 ?>
 
 <!--/ Section Contact-Footer Star /-->
