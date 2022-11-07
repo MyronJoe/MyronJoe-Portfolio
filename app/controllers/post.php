@@ -1,6 +1,7 @@
 <?php
 include ROOT_PATH . "/app/database/db.php";
 include(ROOT_PATH . '/app/helpers/validatePost.php');
+include(ROOT_PATH . '/app/helpers/accesscontrol.php');
 
 $table = 'posts';
 $errors = [];
@@ -19,7 +20,7 @@ $posts = selectAll($table);
 
 
 if (isset($_POST['create-post'])) {
-    
+    adminOnly();
     $errors = validatePost($_POST, $errors);
 
     if (!empty($_FILES['image']['name'])) {
@@ -66,7 +67,6 @@ if (isset($_POST['create-post'])) {
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
-
     $post = selectOne($table, ['id' => $id]);
     // dump($post);
     $id = $post['id'];
@@ -79,6 +79,7 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update-post'])) {
+    adminOnly();
     $errors = validatePost($_POST, $errors);
 
     if (!empty($_FILES['image']['name'])) {
@@ -126,6 +127,7 @@ if (isset($_POST['update-post'])) {
 
 //Delete Post
 if (isset($_GET['del_id'])) {
+    adminOnly();
     $id = $_GET['del_id'];
     $count = delete($table, $id);
     $_SESSION['message'] = 'Post deleted successfully';
@@ -136,6 +138,7 @@ if (isset($_GET['del_id'])) {
 
 //function for Published and Unpublished Post
 if (isset($_GET['published']) && isset($_GET['p_id'])) {
+    adminOnly();
     $published = $_GET['published'];
     $p_id = $_GET['p_id'];
 

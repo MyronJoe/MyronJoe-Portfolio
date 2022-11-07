@@ -1,6 +1,7 @@
 <?php
 include ROOT_PATH . "/app/database/db.php";
 include(ROOT_PATH . '/app/helpers/validateskill.php');
+include(ROOT_PATH . '/app/helpers/accesscontrol.php');
 
 $table = 'skills';
 $errors = [];
@@ -13,6 +14,7 @@ $skills = selectAll($table);
 
 //add skills
 if (isset($_POST['create-skill'])) {
+    adminOnly();
     $errors = validateskill($_POST, $errors);
 
     if (count($errors) === 0) {
@@ -42,6 +44,7 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update-skill'])) {
+    adminOnly();
     $errors = validateskill($_POST, $errors);
 
     if (count($errors) === 0) {
@@ -63,6 +66,7 @@ if (isset($_POST['update-skill'])) {
 
 //delete skills
 if (isset($_GET['del_id'])) {
+    adminOnly();
     $id = $_GET['del_id'];
     $count = delete($table, $id);
     $_SESSION['message'] = "Skill deleted successfully";

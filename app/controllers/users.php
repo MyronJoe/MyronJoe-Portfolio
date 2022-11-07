@@ -1,6 +1,7 @@
 <?php
 include ROOT_PATH . "/app/database/db.php";
 include(ROOT_PATH . '/app/helpers/validateuser.php');
+include(ROOT_PATH . '/app/helpers/accesscontrol.php');
 $table = 'users';
 
 $errors = [];
@@ -24,6 +25,7 @@ function loginUser($user){
     $_SESSION['username'] = $user["username"];
     $_SESSION['email'] = $user["email"];
     $_SESSION['admin'] = $user["admin"];
+    $_SESSION['ultimateAdmin'] = $user["ultimateAdmin"];
     $_SESSION['message'] = "You are now logged in";
     $_SESSION['type'] = "success";
     
@@ -83,9 +85,7 @@ if (isset($_POST['login-btn'])) {
 
 if (isset($_GET['id'])) {
     $user = selectOne($table, ['id' => $_GET['id']]);
-
     // dump($user);
-
     $id = $user['id'];
     $username = $user['username'];
     $email = $user['email'];
@@ -97,9 +97,7 @@ if (isset($_GET['id'])) {
 }
 
 if (isset($_POST['update-user'])) {
-
-    // dump($_FILES);
-    // cv_image
+    ultimateAdminOnly();
     if (!empty($_FILES['cv_image']['name'])) {
         
         $imageName = time() . "_" . $_FILES['cv_image']['name'];
@@ -164,6 +162,7 @@ if (isset($_POST['update-user'])) {
 
 //delete user
 if (isset($_GET['del_id'])) {
+    ultimateAdminOnly();
     $id = $_GET['del_id'];
     $count = delete($table, $id);
     $_SESSION['message'] = "User deleted successfully";

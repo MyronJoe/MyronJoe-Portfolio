@@ -1,7 +1,7 @@
 <?php 
-
 include ROOT_PATH . "/app/database/db.php";
 include(ROOT_PATH . '/app/helpers/validateMessage.php');
+include(ROOT_PATH . '/app/helpers/accesscontrol.php');
 
 $table = 'message';
 $errors = [];
@@ -44,6 +44,7 @@ if (isset($_GET['id'])) {
 
 //delete messages
 if (isset($_GET['del_id'])) {
+    adminOnly();
     $id = $_GET['del_id'];
     $count = delete($table, $id);
     $_SESSION['message'] = "Message deleted successfully";
