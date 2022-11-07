@@ -94,6 +94,20 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
                     <?php endif;?>
                   </div>
 
+                  <div class="col-md-12 mb-3">
+                    <?php if (isset($ultimateAdmin) && $admin == 1):?>
+                        <label>
+                        <input type="checkbox" name="ultimateAdmin" checked>
+                        Ultimate Admin
+                        </label>
+                    <?php else:?>
+                        <label>
+                        <input type="checkbox" name="ultimateAdmin">
+                        Ultimate Admin
+                        </label>
+                    <?php endif;?>
+                  </div>
+
                   <div class="col-md-12">
                     <button type="submit" name="update-user" class="btn btn-primary py-2">Update user</button>
                   </div>
