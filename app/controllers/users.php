@@ -51,7 +51,7 @@ if (isset($_POST['register-btn'])) {
         $_POST['about_me'] = 'Update Bio';
 
         $user_id = create($table, $_POST);
-        $_SESSION['message'] = "User created successfully you can now login";
+        $_SESSION['message'] = "User created successfully, you can now login";
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/login.php");
         exit();

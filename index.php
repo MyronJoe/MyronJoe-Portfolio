@@ -9,9 +9,9 @@
 
     $skills = selectAll('skills');
 
-    // $user = selectOne('users', ['ultimateAdmin' => 1])
+    $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
 
-    // dump($skills)
+    // dump($user)
 ?>
 
     <!--/ Intro Skew Star /-->
@@ -34,15 +34,16 @@
     <section id="about" class="about">
       <div class="container about_section">
         <div class="profile">
+        <?php foreach($user as $key => $admin):?>
           <div class="about-profile">
             <div class="about-img" data-aos="zoom-in">
-              <img src="assets/images/testimonial-2.jpg" class=" rounded" alt="">
+              <img src="<?php echo BASE_URL . '/assets/images/' . $admin['profile_image'] ?>" class=" rounded" alt="<?php echo $admin['username'] ?><">
             </div>
             <div class="about-info">
-              <p class="about-p"><span class="title-s">Name: </span> <span>Myron Joe</span></p>
-              <p class="about-p"><span class="title-s">Profile: </span> <span>Full Stack Developer</span></p>
-              <p class="about-p"><span class="title-s">Email: </span> <span><a href="">myronjoe@gmail.com</a></span></p>
-              <p class="about-p"><span class="title-s">Phone: </span> <span><a href="">0819 0998 9839</a></span></p>
+              <p class="about-p"><span class="title-s">Name: </span> <span><?php echo $admin['username'] ?></span></p>
+              <p class="about-p"><span class="title-s">Profile: </span> <span><?php echo $admin['status'] ?></span></p>
+              <p class="about-p"><span class="title-s">Email: </span> <span><a href=""><?php echo $admin['email'] ?></a></span></p>
+              <p class="about-p"><span class="title-s">Phone: </span> <span><a href=""><?php echo $admin['mobile_num'] ?></a></span></p>
               <p class="about-p"><a href="#"><span class="fa fa-twitter socials-icon"></span></a> <a href="#"><span
                     class="fa fa-instagram socials-icon"></span></a> <a href="#"><span
                     class="fa fa-facebook socials-icon"></span></a> <a href="#"><span
@@ -50,6 +51,7 @@
                     class="fa fa-github socials-icon"></span></a></p>
             </div>
           </div>
+        <?php endforeach;?>
           <div class="skill-mf">
             <p class="title-ss">Skill</p>
             <ul class="skils">
@@ -66,27 +68,21 @@
               <li>Firebase</li> -->
             </ul>
           </div>
-          <p class="pt-2"><a class="btn btn-primary px-4" href="#about" >Download
-              CV</a></p>
-        </div>
-        <div class="about-me">
-          <div class="title-box-2">
-            <h5 class="title-left">
-              About me
-            </h5>
+          <?php foreach($user as $key => $admin):?>
+            <p class="pt-2"><a class="btn btn-primary px-4" href="<?php echo BASE_URL . '/assets/images/' . $admin['cv_image'] ?>" >Download
+                CV</a></p>
+            </div>
+          <div class="about-me">
+            <div class="title-box-2">
+              <h5 class="title-left">
+                About me
+              </h5>
+            </div>
+            <p class="lead">
+            <?php echo $admin['about_me'] ?>
+            </p>
           </div>
-          <p class="lead">
-            Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id
-            imperdiet et, porttitor
-            at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla
-            porttitor accumsan tincidunt.
-          </p>
-          <p class="lead">
-            Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-            porttitor volutpat. Vestibulum
-            ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-          </p>
-        </div>
+        <?php endforeach;?>
       </div>
     </section>
   
