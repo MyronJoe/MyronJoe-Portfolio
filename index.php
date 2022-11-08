@@ -11,7 +11,6 @@
 
     $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
 
-    // dump($user)
 ?>
 
     <!--/ Intro Skew Star /-->
