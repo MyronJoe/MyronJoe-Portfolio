@@ -101,7 +101,6 @@
 		});
 	}
 
-	/*--/ Testimonials owl /--*/
 	$('#testimonial-mf').owlCarousel({
 		margin: 20,
 		autoplay: true,
