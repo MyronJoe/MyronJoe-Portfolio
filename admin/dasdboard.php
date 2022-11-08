@@ -13,7 +13,7 @@ adminOnly();
 
         <div class="rside">
             <div class="adduser-sec">
-                <h2>MyronBlog - Dashboard</h2>
+                <h2>Myron - Portfolio - Dashboard</h2>
 
 
             </div>
