@@ -23,7 +23,6 @@
             <h1 class="intro-title mb-4 nobg">I am Myron Joe</h1>
             <p class="intro-subtitle"><span class="text-slider-items">CEO KamTech,Web Developer,Web Designer,Frontend
                 Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
-            <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
           </div>
         </div>
       </div>
