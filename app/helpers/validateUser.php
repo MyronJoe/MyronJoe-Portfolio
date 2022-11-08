@@ -32,8 +32,6 @@ function validateUser($user, $errors){
         
     }
 
-    // dump($errors);
-
     return $errors;
 }
 
@@ -94,8 +92,6 @@ function validateUpdate($user, $errors){
         }
         
     }
-
-    // dump($errors);
 
     return $errors;
 }
