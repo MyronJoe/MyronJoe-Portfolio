@@ -19,7 +19,6 @@
       <div class="intro-content display-table">
         <div class="table-cell">
           <div class="container">
-            <!--<p class="display-6 color-d">Hello, world!</p>-->
             <h1 class="intro-title mb-4 nobg">I am Myron Joe</h1>
             <p class="intro-subtitle"><span class="text-slider-items">CEO KamTech,Web Developer,Web Designer,Frontend
                 Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
