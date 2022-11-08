@@ -25,7 +25,6 @@ if (isset($_POST['create-skill'])) {
         $_SESSION['type'] = "success";
         header("location: " . BASE_URL . "/admin/skills/index.php");
         exit();
-        // dump($_POST);
 
     }else{
 
