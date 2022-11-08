@@ -33,7 +33,6 @@
     <script src="assets/lib/popper/popper.min.js"></script>
     <script src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/lib/easing/easing.min.js"></script>
-    <!-- <script src="assets/lib/counterup/jquery.waypoints.min.js"></script> -->
     <script src="assets/lib/counterup/jquery.counterup.js"></script>
     <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="assets/lib/lightbox/js/lightbox.min.js"></script>
