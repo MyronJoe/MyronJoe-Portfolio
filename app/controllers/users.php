@@ -85,7 +85,6 @@ if (isset($_POST['login-btn'])) {
 
 if (isset($_GET['id'])) {
     $user = selectOne($table, ['id' => $_GET['id']]);
-    // dump($user);
     $id = $user['id'];
     $username = $user['username'];
     $email = $user['email'];
