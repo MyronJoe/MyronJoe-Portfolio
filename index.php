@@ -253,7 +253,6 @@
       </div>
     </section>
     <!--/ Section Blog End /-->
-  
 <?php 
     include ROOT_PATH . '/app/includes/footer.php'
 ?>
