@@ -29,7 +29,7 @@ function selectAll($table, $conditions = []){
 
     if (empty($conditions)) {
         $sql = "SELECT * FROM $table";
-        $stmt = $conn->prepare($sql);
+        $stmt = $conn->prepare($sql . " ORDER BY id DESC");
         $stmt->execute();
         $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         return $records;
@@ -46,6 +46,7 @@ function selectAll($table, $conditions = []){
 
         // dump($sql);
 
+        $sql = $sql . " ORDER BY id DESC";
         $stmt = executeQuerry($sql, $conditions);
         $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         return $records;
