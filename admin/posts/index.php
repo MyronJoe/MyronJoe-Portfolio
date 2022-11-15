@@ -50,7 +50,7 @@ adminOnly();
                                 <td>
                                     <a href="edit.php?id=<?php echo $post['id'] ?>" class="btn btn-sm btn-primary mr-1">Edit</a>
 
-                                    <a href="index.php?del_id=<?php echo $post['id'] ?>" class="btn btn-sm btn-danger">Delete</a>   
+                                    <a href="index.php?del_id=<?php echo $post['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure...?')">Delete</a>   
                                 </td>
 
                                 <td>

@@ -11,6 +11,8 @@
 
     $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
 
+    // dump($blogs);
+
 ?>
 
     <!--/ Intro Skew Star /-->
@@ -189,7 +191,7 @@
                   </div>
                 </div>
               </a>
-              <p class="ml-3 pb-2"><a href="">Preview</a></p>
+              <p class="ml-3 pb-2"><a href="<?php echo $project['link']?>">Preview</a></p>
             </div>
           </div>
 
@@ -217,15 +219,16 @@
         <div class="row">
           <?php foreach($blogs as $key => $blog):?>
 
-            <?php if($key < 3):?>
-              <?php
+            <?php
                 $author = selectOne('users', ['id' => $blog['user_id']]);
-              ?>
+            ?>
+
+            <?php if($key < 3):?>
 
               <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
                 <div class="card card-blog">
                   <div class="card-img">
-                    <a href="blog-single.html"><img src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt="" class="img-fluid"></a>
+                    <a href="blog-single.html"><img style="object-fit: cover;" height="250px" width="100%" src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt=""></a>
                   </div>
                   <div class="card-body">
                     <div class="card-category-box">
