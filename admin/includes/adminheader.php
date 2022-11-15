@@ -1,8 +1,9 @@
-<?php 
+<?php
 session_start()
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,10 +14,11 @@ session_start()
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- <link rel="icon" href="../../assets/images/Mj-fav-icon.png" /> -->
     <style>
-        .sidebar1 ul a{
+        .sidebar1 ul a {
             height: 10% !important;
         }
-        .err-msg{
+
+        .err-msg {
             width: 80%;
             position: absolute;
             z-index: 200;
@@ -25,6 +27,7 @@ session_start()
             margin: auto;
             top: 80px;
         }
+
         .submenu ul {
             display: none;
             position: absolute;
@@ -55,9 +58,9 @@ session_start()
         .handler:hover .submenu ul {
             display: block;
         }
-        
     </style>
 </head>
+
 <body>
     <nav style="display: flex;">
         <div class="logo">
@@ -67,7 +70,7 @@ session_start()
             <ul>
 
                 <li class="handler mt-2">
-                    <a href="#" ><span class="fa fa-user mr-1"></span>Joe</a>
+                    <a href="#"><span class="fa fa-user mr-1"></span>Joe</a>
 
                     <div class="submenu">
                         <ul style="top:30px; right:0px">
@@ -79,15 +82,15 @@ session_start()
         </div>
     </nav>
 
-<div class="err-msg">
-  <?php if(isset($_SESSION["message"])): ?>
-      <div style="padding: 1em;" class="<?php echo $_SESSION["type"];?>">
-          <p><?php echo $_SESSION["message"];?></p>
+    <div class="err-msg">
+        <?php if (isset($_SESSION["message"])) : ?>
+            <div style="padding: 1em;" class="<?php echo $_SESSION["type"]; ?>">
+                <p><?php echo $_SESSION["message"]; ?></p>
 
-          <?php 
-              unset($_SESSION["message"]);
-              unset($_SESSION["type"]);
-          ?>
-      </div>     
-  <?php endif; ?>
-</div>
+                <?php
+                unset($_SESSION["message"]);
+                unset($_SESSION["type"]);
+                ?>
+            </div>
+        <?php endif; ?>
+    </div>
