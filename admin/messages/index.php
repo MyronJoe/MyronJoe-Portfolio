@@ -34,7 +34,7 @@ adminOnly();
                             <td style="font-weight: bold;"><a href="msg.php?id=<?php echo $message['id']?>"><?php echo $message['name']?></a></td>
                             <td><?php echo $message['email']?></td>
                             <td><?php echo $message['number']?></td>
-                            <td><a href="index.php?del_id=<?php echo $message['id']?>" class="btn btn-sm btn-danger">Delete</a> </td>  
+                            <td><a href="index.php?del_id=<?php echo $message['id']?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure...?')">Delete</a> </td>  
                         </tr>
                     <?php endforeach; ?>
                 </tbody>
