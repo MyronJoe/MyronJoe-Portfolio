@@ -91,6 +91,10 @@ adminOnly();
     </div>
 </section>
 
+<script>
+    CKEDITOR.replace('editor1');
+</script>
+
 </body>
 
 </html>
