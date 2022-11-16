@@ -237,7 +237,7 @@
                       </div>
                     </div>
                     <h3 class="card-title nobg"><a href="blog-single.html"><?php echo $blog['title']?></a></h3>
-                    <p class="card-description"><?php echo substr($blog['content'], 0, 120).'...'?></p>
+                    <p class="card-description"><?php echo substr(html_entity_decode($blog['content']), 0, 120).'...'?></p>
                   </div>
                   <div class="card-footer">
                     <div class="post-author">
