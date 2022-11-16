@@ -106,6 +106,7 @@ if (isset($_POST['update-post'])) {
 
         $_POST['published'] = isset($_POST['published']) ? 1 : 0;
         $_POST['blog'] = isset($_POST['blog']) ? 1 : 0;
+        $_POST['content'] = htmlentities($_POST['content']);
 
         $post_id = update($table, $id, $_POST);
         $_SESSION['message'] = 'Post updated successfully';
