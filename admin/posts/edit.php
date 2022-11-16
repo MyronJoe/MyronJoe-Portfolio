@@ -34,7 +34,7 @@ adminOnly();
                 </div>
 
                 <div class="col-md-12 mb-3">
-                    <textarea class="form-control" placeholder="Content"  id="description" value="" value="" name="content"><?php echo $content ?></textarea>
+                    <textarea class="form-control" placeholder="Content"  id="editor1" value="" value="" name="content"><?php echo $content ?></textarea>
                 </div>
 
                 <div class="col-md-12 mb-3">
