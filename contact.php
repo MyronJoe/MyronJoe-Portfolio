@@ -58,6 +58,6 @@ include(ROOT_PATH . '/app/includes/header.php');
         </div>
     </div>
 </section>
-<?php 
-    include ROOT_PATH . '/app/includes/footer.php'
+<?php
+include ROOT_PATH . '/app/includes/footer.php'
 ?>
