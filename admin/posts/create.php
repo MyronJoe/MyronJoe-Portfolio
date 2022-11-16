@@ -33,12 +33,12 @@ adminOnly();
                 </div>
 
                 <div class="col-md-12 mb-3">
-                    <textarea class="form-control" placeholder="Content"  id="description" value="" value="" name="content"><?php echo $content ?></textarea>
+                    <textarea class="form-control" placeholder="Content" id="editor1" value="" value="" name="content"><?php echo $content ?></textarea>
                 </div>
 
                 <div class="col-md-12 mb-3">
                     <label for="image">Image</label>
-                    <input type="file" class="form-control-file"  id="image" name="image">
+                    <input type="file" class="form-control-file" id="image" name="image">
                 </div>
 
                 <div class="col-md-12 mb-3">
@@ -52,29 +52,29 @@ adminOnly();
 
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        <input type="text" name="link" value="<?php echo $link ?>"  class="form-control" placeholder="Link" />
+                        <input type="text" name="link" value="<?php echo $link ?>" class="form-control" placeholder="Link" />
                     </div>
                 </div>
 
-                <?php if(isset($published) && $published == 1): ?>
+                <?php if (isset($published) && $published == 1) : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published" checked>
                         <label class="form-check-label" for="exampleCheck1">Publish</label>
                     </div>
-                <?php else: ?>
+                <?php else : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published">
                         <label class="form-check-label" for="exampleCheck1">Publish</label>
                     </div>
                 <?php endif; ?>
 
-                
-                <?php if(isset($blog) && $blog == 1): ?>
+
+                <?php if (isset($blog) && $blog == 1) : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog" checked>
                         <label class="form-check-label" for="exampleCheck2">Blog</label>
                     </div>
-                <?php else: ?>
+                <?php else : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog">
                         <label class="form-check-label" for="exampleCheck2">Blog</label>
@@ -91,6 +91,9 @@ adminOnly();
     </div>
 </section>
 
+<script>
+    CKEDITOR.replace('editor1');
+</script>
 </body>
 
 </html>
