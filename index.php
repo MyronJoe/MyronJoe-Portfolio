@@ -251,7 +251,6 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
     </div>
   </div>
 </section>
-<!--/ Section Blog End /-->
 <?php
 include ROOT_PATH . '/app/includes/footer.php'
 ?>
