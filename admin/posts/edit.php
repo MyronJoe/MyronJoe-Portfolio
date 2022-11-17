@@ -34,7 +34,7 @@ adminOnly();
                 </div>
 
                 <div class="col-md-12 mb-3">
-                    <textarea class="form-control" placeholder="Content"  id="editor1" value="" value="" name="content"><?php echo $content ?></textarea>
+                    <textarea class="form-control" placeholder="Content" id="editor1" value="" value="" name="content"><?php echo $content ?></textarea>
                 </div>
 
                 <div class="col-md-12 mb-3">
@@ -53,28 +53,28 @@ adminOnly();
 
                 <div class="col-md-12 mb-3">
                     <div class="form-group">
-                        <input type="text" name="link" value="<?php echo $link ?>"  class="form-control" placeholder="Link" />
+                        <input type="text" name="link" value="<?php echo $link ?>" class="form-control" placeholder="Link" />
                     </div>
                 </div>
-                
-                <?php if(empty($published) && $published == 0): ?>
+
+                <?php if (empty($published) && $published == 0) : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published">
                         <label class="form-check-label" for="exampleCheck1">Publish</label>
                     </div>
-                <?php else: ?>
+                <?php else : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1" name="published" checked>
                         <label class="form-check-label" for="exampleCheck1">Publish</label>
                     </div>
                 <?php endif; ?>
 
-                <?php if(empty($blog) && $blog == 0): ?>
+                <?php if (empty($blog) && $blog == 0) : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog">
                         <label class="form-check-label" for="exampleCheck2">Blog</label>
                     </div>
-                <?php else: ?>
+                <?php else : ?>
                     <div class="form-group form-check col-md-12 mb-3 ml-3">
                         <input type="checkbox" class="form-check-input" id="exampleCheck2" name="blog" checked>
                         <label class="form-check-label" for="exampleCheck2">Blog</label>
