@@ -224,7 +224,7 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="card card-blog">
               <div class="card-img">
-                <a href="blog-single.html"><img style="object-fit: cover;" height="250px" width="100%" src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt=""></a>
+                <a href="post.php?p_id=<?php echo $blog['id']?>"><img style="object-fit: cover;" height="250px" width="100%" src="<?php echo BASE_URL . '/assets/images/' . $blog['image'] ?>" alt=""></a>
               </div>
               <div class="card-body">
                 <div class="card-category-box">
@@ -232,7 +232,11 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
                     <h6 class="category"><?php echo $blog['category'] ?></h6>
                   </div>
                 </div>
-                <h3 class="card-title nobg"><a href="blog-single.html"><?php echo $blog['title'] ?></a></h3>
+                <h3 class="card-title nobg">
+                  <a href="post.php?p_id=<?php echo $blog['id']?>">
+                    <?php echo $blog['title'] ?>
+                  </a>
+                </h3>
                 <p class="card-description"><?php echo substr(html_entity_decode($blog['content']), 0, 120) . '...' ?></p>
               </div>
               <div class="card-footer">

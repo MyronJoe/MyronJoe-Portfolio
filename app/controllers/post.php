@@ -79,6 +79,8 @@ if (isset($_GET['id'])) {
     $published = $post['published'];
 }
 
+
+
 if (isset($_POST['update-post'])) {
     adminOnly();
     $errors = validatePost($_POST, $errors);
