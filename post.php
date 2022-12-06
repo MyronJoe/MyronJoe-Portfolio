@@ -34,13 +34,13 @@ if (isset($_GET['p_id'])) {
 <!--/ Intro Skew End /-->
 
 <!--/ Section Blog-Single Star /-->
-<section class="blog-wrapper sect-pt4" id="blog">
+<section class="blog-wrapper " id="blog">
     <div class="container">
         <div class="row">
             <div class="col-md-8">
                 <div class="post-box">
                     <div class="post-thumb">
-                        <img src="img/post-1.jpg" class="img-fluid" alt="">
+                        <img src="assets/images/blog-4.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="post-meta">
                         <h1 class="article-title">Lorem ipsum dolor sit amet consec tetur adipisicing</h1>

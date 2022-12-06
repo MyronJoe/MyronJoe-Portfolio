@@ -899,14 +899,14 @@ body {
   //--//-->   BLOG-SINGLE
   ======================================*/
   
-  .post-box,
+  /* .post-box,
   .form-comments,
   .box-comments,
   .widget-sidebar {
     padding: 2rem;
     background-color: #fff;
     margin-bottom: 3rem;
-  }
+  } */
   
   .blog-wrapper .article-title {
     font-size: 1.5rem;
@@ -1194,12 +1194,12 @@ body {
       padding: 0 5rem;
     }
   
-    .post-box,
+    /* .post-box,
     .form-comments,
     .box-comments,
     .widget-sidebar {
       padding: 3rem;
-    }
+    } */
   
     .blog-wrapper .article-title {
       font-size: 1.9rem;
@@ -2163,14 +2163,14 @@ body {
        BLOG-SINGLE
   ======================================*/
   
-  .post-box,
+  /* .post-box,
   .form-comments,
   .box-comments,
   .widget-sidebar {
     padding: 2rem;
     background-color: #fff;
     margin-bottom: 3rem;
-  }
+  } */
   
   .blog-wrapper .article-title {
     font-size: 1.5rem;
@@ -2472,12 +2472,12 @@ body {
       padding: 0 5rem;
     }
   
-    .post-box,
+    /* .post-box,
     .form-comments,
     .box-comments,
     .widget-sidebar {
       padding: 3rem;
-    }
+    } */
   
     .blog-wrapper .article-title {
       font-size: 1.9rem;
