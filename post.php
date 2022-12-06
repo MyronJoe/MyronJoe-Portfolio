@@ -9,6 +9,8 @@ if (isset($_GET['p_id'])) {
 
 $user = selectOne('users', ['id' => $post['user_id']]);
 
+$blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
+
 // dump($user);
 
 ?>
@@ -71,10 +73,12 @@ $user = selectOne('users', ['id' => $post['user_id']]);
                     <h5 class="sidebar-title">Recent Post</h5>
                     <div class="sidebar-content">
                         <ul class="list-sidebar">
-                            <li>
-                                <a href="#">Atque placeat maiores.</a>
-                            </li>
-                            <li>
+                            <?php foreach ($blogs as $key => $blog) : ?>
+                                <li>
+                                    <a href="#"><?php echo $blog['title'] ?></a>
+                                </li>
+                            <?php endforeach; ?>
+                            <!-- <li>
                                 <a href="#">Lorem ipsum dolor sit amet consectetur</a>
                             </li>
                             <li>
@@ -85,7 +89,7 @@ $user = selectOne('users', ['id' => $post['user_id']]);
                             </li>
                             <li>
                                 <a href="#">Nam quo autem exercitationem.</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
