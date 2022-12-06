@@ -41,9 +41,10 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
           <div class="about-info">
             <p class="about-p"><span class="title-s">Name: </span> <span><?php echo $admin['username'] ?></span></p>
             <p class="about-p"><span class="title-s">Profile: </span> <span><?php echo $admin['status'] ?></span></p>
-            <p class="about-p"><span class="title-s">Email: </span> <span><a href="mailto:josephonyekachi77@gmail.com?subject=We%20offer%20Web%20Design,%20Web%20Development,%20Graphics%20Design%20and%20more"><?php echo $admin['email'] ?></a></span></p>
-            <p class="about-p"><span class="title-s">Phone: </span> <span><a href="https://wa.me/2347046617413?text=WELCOME%20to%20Myron%20Tech.%20We%20offer%20Web%20Design,%20Web%20Development,%20Graphics%20Design%20and%20more."><?php echo $admin['mobile_num'] ?></a></span></p>
-            <p class="about-p"><a href="https://twitter.com/kamTech_01"><span class="fa fa-twitter socials-icon"></span></a> <a href="#"><span class="fa fa-instagram socials-icon"></span></a> <a href="https://web.facebook.com/myron.joe.50"><span class="fa fa-facebook socials-icon"></span></a> <a href="#"><span class="fa fa-linkedin socials-icon"></span></a> <a href="https://github.com/MyronJoe"><span class="fa fa-github socials-icon"></span></a></p>
+            <p class="about-p"><span class="title-s">Email: </span> <span><a href="mailto:josephonyekachi77@gmail.com?subject=WELCOME%20to%20Kam%20Tech.%20We%20offer%20Web%20Design,%20Web%20Development,%20Graphics%20Design%20and%20more."><?php echo $admin['email'] ?></a></span></p>
+            <p class="about-p"><span class="title-s">Phone: </span> <span><a href="tel:<?php echo $admin['mobile_num'] ?>"><?php echo $admin['mobile_num'] ?></a></span></p>
+            
+            <p class="about-p"><a href="https://twitter.com/kamTech_01"><span class="fa fa-twitter socials-icon"></span></a> <a href="#"><span class="fa fa-instagram socials-icon"></span></a> <a href="https://web.facebook.com/myron.joe.50"><span class="fa fa-facebook socials-icon"></span></a> <a href="#"><span class="fa fa-linkedin socials-icon"></span></a> <a href="https://github.com/MyronJoe"><span class="fa fa-github socials-icon"></span></a>   <a href="https://wa.me/2347046617413?text=WELCOME%20to%20Kam%20Tech.%20We%20offer%20Web%20Design,%20Web%20Development,%20Graphics%20Design%20and%20more."><span class="fa fa-whatsapp socials-icon"></span></a></p>
           </div>
         </div>
       <?php endforeach; ?>

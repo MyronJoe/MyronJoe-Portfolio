@@ -7,7 +7,7 @@
           <ul>
             <li><a href="https://web.facebook.com/myron.joe.50"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
             <li><a href="https://twitter.com/kamTech_01"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-            <li><a href="https://wa.me/2347046617413?text=WELCOME%20to%20Myron%20Tech.%20We%20offer%20Web%20Design,%20Web%20Development,%20Graphics%20Design%20and%20more."><span class="ico-circle"><i class="ion-social-whatsapp"></i></span></a></li>
+            <li><a href="https://wa.me/2347046617413?text=WELCOME%20to%20Kam%20Tech.%20We%20offer%20Web%20Design,%20Web%20Development,%20Graphics%20Design%20and%20more."><span class="ico-circle"><i class="ion-social-whatsapp"></i></span></a></li>
             <li><a href="https://github.com/MyronJoe"><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
           </ul>
         </div>
