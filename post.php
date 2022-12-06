@@ -19,15 +19,15 @@ $user = selectOne('users', ['id' => $post['user_id']]);
     <div class="intro-content display-table">
         <div class="table-cell">
             <div class="container">
-                <h2 class="intro-title mb-4">Blog Details</h2>
+                <h2 class="intro-title mb-4" style="background: none; font-size:40px"><?php echo $post['title'] ?></h2>
                 <ol class="breadcrumb d-flex justify-content-center">
                     <li class="breadcrumb-item">
-                        <a href="#">Home</a>
+                        <a href="#"><?php echo $user['username'] ?></a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#">Library</a>
+                        <a href="#"><?php echo $post['category'] ?></a>
                     </li>
-                    <li class="breadcrumb-item active">Data</li>
+                    
                 </ol>
             </div>
         </div>
@@ -42,7 +42,7 @@ $user = selectOne('users', ['id' => $post['user_id']]);
             <div class="col-md-8" style="background:#fff; padding: 0em">
                 <div class="post-box">
                     <div class="post-thumb">
-                        <img src="assets/images/<?php echo $post['image'] ?>" class="img-fluid" alt="">
+                        <img src="assets/images/<?php echo $post['image'] ?>" style="height: 400px; width:100%; object-fit: cover;" alt="">
                     </div>
                     <div class="post-meta" style="padding: 1em">
                         <h1 class="article-title"><?php echo $post['title'] ?></h1>
@@ -59,7 +59,7 @@ $user = selectOne('users', ['id' => $post['user_id']]);
                     </div>
                     <div class="article-content" style="padding: 0 1em 1em 1em">
                         <p>
-                            <?php echo $post['content'] ?>
+                            <?php echo html_entity_decode($post['content']) ?>
                         </p>
                     </div>
                 </div>
