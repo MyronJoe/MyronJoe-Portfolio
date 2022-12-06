@@ -29,7 +29,7 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                     <li class="breadcrumb-item">
                         <a href="#"><?php echo $post['category'] ?></a>
                     </li>
-                    
+
                 </ol>
             </div>
         </div>
@@ -65,8 +65,8 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                         </p>
                     </div>
                 </div>
-                
-               
+
+
             </div>
             <div class="col-md-4">
                 <div class="widget-sidebar" style="background:#fff; padding: 1em">
@@ -75,7 +75,7 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                         <ul class="list-sidebar">
                             <?php foreach ($blogs as $key => $blog) : ?>
                                 <li>
-                                    <a href="post.php?p_id=<?php echo $blog['id']?>"><?php echo $blog['title'] ?></a>
+                                    <a href="post.php?p_id=<?php echo $blog['id'] ?>"><?php echo $blog['title'] ?></a>
                                 </li>
                             <?php endforeach; ?>
                             <!-- <li>
@@ -93,8 +93,8 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                         </ul>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </div>
