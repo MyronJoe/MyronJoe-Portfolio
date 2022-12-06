@@ -75,7 +75,7 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                         <ul class="list-sidebar">
                             <?php foreach ($blogs as $key => $blog) : ?>
                                 <li>
-                                    <a href="#"><?php echo $blog['title'] ?></a>
+                                    <a href="post.php?p_id=<?php echo $blog['id']?>"><?php echo $blog['title'] ?></a>
                                 </li>
                             <?php endforeach; ?>
                             <!-- <li>
