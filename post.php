@@ -36,13 +36,13 @@ if (isset($_GET['p_id'])) {
 <!--/ Section Blog-Single Star /-->
 <section class="blog-wrapper " id="blog">
     <div class="container">
-        <div class="row">
-            <div class="col-md-8">
+        <div class="row" style="margin: 20px 0;">
+            <div class="col-md-8" style="background:#fff; padding: 0em">
                 <div class="post-box">
                     <div class="post-thumb">
                         <img src="assets/images/blog-4.jpg" class="img-fluid" alt="">
                     </div>
-                    <div class="post-meta">
+                    <div class="post-meta" style="padding: 1em">
                         <h1 class="article-title">Lorem ipsum dolor sit amet consec tetur adipisicing</h1>
                         <ul>
                             <li>
@@ -53,13 +53,9 @@ if (isset($_GET['p_id'])) {
                                 <span class="ion-pricetag"></span>
                                 <a href="#">Web Design</a>
                             </li>
-                            <li>
-                                <span class="ion-chatbox"></span>
-                                <a href="#">14</a>
-                            </li>
                         </ul>
                     </div>
-                    <div class="article-content">
+                    <div class="article-content" style="padding: 0 1em 1em 1em">
                         <p>
                             Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula sed magna dictum
                             porta. Quisque velit
@@ -103,22 +99,7 @@ if (isset($_GET['p_id'])) {
                
             </div>
             <div class="col-md-4">
-                <div class="widget-sidebar sidebar-search">
-                    <h5 class="sidebar-title">Search</h5>
-                    <div class="sidebar-content">
-                        <form>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Search for..." aria-label="Search for...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-secondary btn-search" type="button">
-                                        <span class="ion-android-search"></span>
-                                    </button>
-                                </span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="widget-sidebar">
+                <div class="widget-sidebar" style="background:#fff; padding: 1em">
                     <h5 class="sidebar-title">Recent Post</h5>
                     <div class="sidebar-content">
                         <ul class="list-sidebar">
