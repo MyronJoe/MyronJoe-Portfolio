@@ -5,9 +5,9 @@
         <div class="col-sm-12">
           <div class="socials">
             <ul>
-              <li><a href=""><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
-              <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
-              <li><a href=""><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+              <li><a href="https://web.facebook.com/myron.joe.50"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+              <li><a href="https://twitter.com/kamTech_01"><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+              <li><a href=""><span class="ico-circle"><i class="ion-social-whatsapp"></i></span></a></li>
               <li><a href=""><span class="ico-circle"><i class="ion-social-github"></i></span></a></li>
             </ul>
           </div>
