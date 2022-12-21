@@ -78,23 +78,9 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                                     <a href="post.php?p_id=<?php echo $blog['id'] ?>"><?php echo $blog['title'] ?></a>
                                 </li>
                             <?php endforeach; ?>
-                            <!-- <li>
-                                <a href="#">Lorem ipsum dolor sit amet consectetur</a>
-                            </li>
-                            <li>
-                                <a href="#">Nam quo autem exercitationem.</a>
-                            </li>
-                            <li>
-                                <a href="#">Atque placeat maiores nam quo autem</a>
-                            </li>
-                            <li>
-                                <a href="#">Nam quo autem exercitationem.</a>
-                            </li> -->
                         </ul>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
