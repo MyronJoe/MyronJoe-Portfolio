@@ -162,9 +162,7 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
     <div class="row">
 
       <?php foreach ($projects as $key => $project) : ?>
-
         <?php if ($key < 7) : ?>
-
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
             <div class="work-box">
               <a href="<?php echo BASE_URL . '/assets/images/' . $project['image'] ?>" data-lightbox="gallery-mf">
@@ -191,7 +189,6 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
               <p class="ml-3 pb-2"><a href="<?php echo $project['link'] ?>">Preview</a></p>
             </div>
           </div>
-
         <?php endif; ?>
       <?php endforeach; ?>
 
