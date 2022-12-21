@@ -3,7 +3,6 @@ session_start()
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -69,7 +68,6 @@ session_start()
         </div>
         <div class="user">
             <ul>
-
                 <li class="handler mt-2">
                     <a href="#"><span class="fa fa-user mr-1"></span>Joe</a>
 
