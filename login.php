@@ -28,21 +28,17 @@ allreadyLogedIn();
                   <input type="email" class="form-control" name="email" value="<?php echo $email ?>" id="email" placeholder="Your Email" />
                 </div>
               </div>
-
               <div class="col-md-12 mb-3">
                 <div class="form-group">
                   <input type="text" class="form-control" name="password" value="<?php echo $password ?>" id="subject" placeholder="Enter Password" />
                 </div>
               </div>
-
               <div class="col-md-12">
                 <button type="submit" name="login-btn" class="btnn py-2">Login</button>
               </div>
-
               <div class="ml-3 my-2">
                 <small style="font-size: 11px;">Do not have an account? <a href="<?php echo BASE_URL . '/register.php' ?>">Sign Up</a></small>
               </div>
-
             </div>
           </form>
         </div>
