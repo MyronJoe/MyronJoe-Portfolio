@@ -160,7 +160,6 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
       </div>
     </div>
     <div class="row">
-
       <?php foreach ($projects as $key => $project) : ?>
         <?php if ($key < 7) : ?>
           <div class="col-sm-12 col-md-6 col-lg-4" data-aos="zoom-in">
@@ -196,6 +195,7 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
   </div>
 </section>
 <!--/ Section Portfolio End /-->
+
 
 <!--/ Section Blog Star /-->
 <section id="blog" class="blog-mf sect-pt4 route">
