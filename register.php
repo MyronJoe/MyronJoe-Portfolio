@@ -5,7 +5,6 @@ require_once(ROOT_PATH . '/app/controllers/users.php');
 require_once(ROOT_PATH . '/app/includes/header.php');
 allreadyLogedIn();
 ?>
-
 <!--/ Section Contact-Footer Star /-->
 <section class="paralax-mf footer-paralax bg-image sect-mt4 route pb-5" style="background-image: url(assets/images/blog-4.jpg)">
   <div class="overlay-mf"></div>
