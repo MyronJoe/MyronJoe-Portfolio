@@ -65,8 +65,6 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
                         </p>
                     </div>
                 </div>
-
-
             </div>
             <div class="col-md-4">
                 <div class="widget-sidebar" style="background:#fff; padding: 1em">
@@ -86,6 +84,7 @@ $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
     </div>
 </section>
 <!--/ Section Blog-Single End /-->
+
 
 <!--/ Section Contact-Footer Star /-->
 <?php
