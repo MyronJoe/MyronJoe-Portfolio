@@ -12,7 +12,6 @@ $user = selectOne('users', ['id' => $post['user_id']]);
 $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
 
 ?>
-
 <!--/ Intro Skew Star /-->
 <div class="intro intro-single route bg-image" style="background-image: url(assets/images/blog-4.jpg)">
     <div class="overlay-mf"></div>
