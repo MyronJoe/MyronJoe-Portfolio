@@ -11,8 +11,6 @@ $user = selectOne('users', ['id' => $post['user_id']]);
 
 $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
 
-// dump($user);
-
 ?>
 
 <!--/ Intro Skew Star /-->
