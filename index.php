@@ -248,7 +248,6 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
           </div>
         <?php endif; ?>
       <?php endforeach; ?>
-
     </div>
   </div>
 </section>
