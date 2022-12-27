@@ -146,8 +146,6 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
 </section>
 <!--/ Section Services End /-->
 
-
-
 <!--/ Section Portfolio Star /-->
 <section id="work" class="portfolio-mf sect-pt4 route">
   <div class="container">
