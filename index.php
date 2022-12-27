@@ -196,7 +196,6 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
 </section>
 <!--/ Section Portfolio End /-->
 
-
 <!--/ Section Blog Star /-->
 <section id="blog" class="blog-mf sect-pt4 route">
   <div class="container">
