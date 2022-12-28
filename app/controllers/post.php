@@ -64,8 +64,7 @@ if (isset($_POST['create-post'])) {
     
 }
 
-//update podt
-
+//update post
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $post = selectOne($table, ['id' => $id]);
