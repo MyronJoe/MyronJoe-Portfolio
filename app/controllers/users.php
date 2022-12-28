@@ -18,7 +18,6 @@ $ultimateAdmin = '';
 
 $allUsers = selectAll($table);
 
-
 //function that logs the user in
 function loginUser($user){
     $_SESSION['id'] = $user["id"];
