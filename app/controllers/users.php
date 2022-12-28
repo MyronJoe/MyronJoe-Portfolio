@@ -82,7 +82,6 @@ if (isset($_POST['login-btn'])) {
 }
 
 //Update user
-
 if (isset($_GET['id'])) {
     $user = selectOne($table, ['id' => $_GET['id']]);
     $id = $user['id'];
