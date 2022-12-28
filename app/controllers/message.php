@@ -39,7 +39,6 @@ if (isset($_GET['id'])) {
     $email = $msg['email'];
     $number = $msg['number'];
     $content = $msg['content'];
-    // dump($msg);
 }
 
 //delete messages
