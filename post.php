@@ -8,9 +8,7 @@ if (isset($_GET['p_id'])) {
 }
 
 $user = selectOne('users', ['id' => $post['user_id']]);
-
 $blogs = selectAll('posts', ['blog' => 1, 'published' => 1]);
-
 ?>
 
 <!--/ Intro Skew Star /-->
