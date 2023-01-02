@@ -210,6 +210,7 @@ $user = selectAll('users', ['ultimateAdmin' => 1, 'admin' => 1]);
       </div>
     </div>
     <div class="row">
+      
       <?php foreach ($blogs as $key => $blog) : ?>
 
         <?php
