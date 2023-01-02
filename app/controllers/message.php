@@ -10,7 +10,6 @@ $email = '';
 $number = '';
 $content = '';
 $id = '';
-
 $messages = selectAll($table);
 
 if (isset($_POST['message-btn'])) {
