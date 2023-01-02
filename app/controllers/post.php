@@ -5,7 +5,6 @@ include(ROOT_PATH . '/app/helpers/accesscontrol.php');
 
 $table = 'posts';
 $errors = [];
-
 $id = '';
 $title = '';
 $content = '';
@@ -14,7 +13,6 @@ $link = '';
 $published = '';
 $blog = '';
 $image = '';
-
 $posts = selectAll($table);
 
 
