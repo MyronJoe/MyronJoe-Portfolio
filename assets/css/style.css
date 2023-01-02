@@ -1153,8 +1153,6 @@ a:hover {
     padding: 0;
     justify-content: flex-start;
   }
-
-
 }
 
 @media (min-width: 767px) {
@@ -1171,8 +1169,6 @@ a:hover {
     margin-top: 2rem;
     padding-left: 0rem;
   }
-
-
 }
 
 @media (min-width: 768px) {
