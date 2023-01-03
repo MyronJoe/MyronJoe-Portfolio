@@ -17,7 +17,6 @@
   <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" rel="stylesheet">
 
-
   <link href="assets/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
   <link href="assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
@@ -131,7 +130,6 @@
               <li class="nav-item register">
                 <a class="nav-link js-scroll" href="<?php echo BASE_URL . '/register.php'?>">Register</a>
               </li>
-
           <?php endif; ?>
 
         </ul>
