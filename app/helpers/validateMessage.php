@@ -19,8 +19,6 @@ function validateMeaasge($user, $errors){
         array_push($errors, 'Message content is required');
     }
 
-    
-
     return $errors;
 }
 
