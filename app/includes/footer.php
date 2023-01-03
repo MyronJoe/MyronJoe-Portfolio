@@ -25,8 +25,6 @@
 
 <a class="back-to-top" href="#"><i class="fa fa-chevron-up"></i></a>
 <div id="preloader"></div>
-
-
 <!-- JavaScript Libraries -->
 <script src="assets/lib/jquery/jquery.min.js"></script>
 <script src="assets/lib/jquery/jquery-migrate.min.js"></script>
