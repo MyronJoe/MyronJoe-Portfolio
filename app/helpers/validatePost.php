@@ -32,7 +32,5 @@ function validatePost($post, $errors){
         
     }
 
-    // dump($errors);
-
     return $errors;
 }
