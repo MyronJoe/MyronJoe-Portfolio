@@ -91,7 +91,6 @@ if (isset($_POST['update-post'])) {
         }else{
             array_push($errors, 'Image failed to upload');
         }
-        // dump($imageName);
     }else{
         array_push($errors, 'Image is requierd');
     }
