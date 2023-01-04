@@ -15,7 +15,6 @@ $blog = '';
 $image = '';
 $posts = selectAll($table);
 
-
 if (isset($_POST['create-post'])) {
     adminOnly();
     $errors = validatePost($_POST, $errors);
@@ -65,7 +64,7 @@ if (isset($_POST['create-post'])) {
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
     $post = selectOne($table, ['id' => $id]);
-    // dump($post);
+
     $id = $post['id'];
     $title = $post['title'];
     $content = $post['content'];
